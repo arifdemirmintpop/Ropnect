@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed5ee03ec9d31754f9508145a046827f, type: 3}
+  m_Name: ReelSO
+  m_EditorClassIdentifier: Assembly-CSharp::ReelDataSO
+  reelDatas:
+  - reelColorId: 0
+    activeMaterial: {fileID: 2100000, guid: 0eacf60e0f03cc94985f1b5255a6f9f6, type: 2}
+    deactiveMaterial: {fileID: 2100000, guid: 7f0392a6d88d8104d86c7dc5a2d63d56, type: 2}
+  - reelColorId: 1
+    activeMaterial: {fileID: 2100000, guid: 42b0f4f5ece69cc4c936ec34ab4d28b7, type: 2}
+    deactiveMaterial: {fileID: 2100000, guid: e2d5ddac41599ed4f8fabe6d2882b883, type: 2}
+  - reelColorId: 2
+    activeMaterial: {fileID: 2100000, guid: dde04ec803b52a948aec122b6265f938, type: 2}
+    deactiveMaterial: {fileID: 2100000, guid: 35612fd95e497414e9116c66cadcbd50, type: 2}
+  reelActiveMaterial: {fileID: 2100000, guid: fb6c0fe76f0fefa41ab367d7c87a5ef1, type: 2}
+  reelDeactiveMaterial: {fileID: 2100000, guid: f2807f4f2e6b51a4898256d0e0aa2624, type: 2}
