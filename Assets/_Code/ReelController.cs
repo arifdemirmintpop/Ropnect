@@ -40,6 +40,12 @@ public class ReelController : MonoBehaviour
         level = newLevel;
         color = newColor;
         UpdateVisual();
+
+        // if this is a non-order reel and there's a matching order in scene, request to join it
+        if (!isOrder && OrderManager.Instance != null)
+        {
+            TryJoinOrder();
+        }
     }
 
     [ContextMenu("UpdateVisual")]
@@ -133,7 +139,39 @@ public class ReelController : MonoBehaviour
                 UpdateVisual();
                 // reset exp visual
                 currentExp = 0f;
+
+                // after leveling up, if there's a matching order, request to join it
+                if (OrderManager.Instance != null)
+                    TryJoinOrder();
             });
+    }
+
+    // request nearest matching OrderController to accept this reel
+    void TryJoinOrder()
+    {
+        ReelController self = this;
+        OrderController best = null;
+        int bestFilled = -1;
+
+        foreach (var oc in OrderManager.Instance.orderControllers)
+        {
+            if (oc == null) continue;
+            if (oc.order == null) continue;
+            if (oc.order.level != level) continue;
+            if (oc.order.color != color) continue;
+
+            // prefer the order controller that is most filled (highest completedCount)
+            if (oc.completedCount > bestFilled)
+            {
+                bestFilled = oc.completedCount;
+                best = oc;
+            }
+        }
+
+        if (best != null)
+        {
+            best.AddReel(this);
+        }
     }
 
     // Select visual: lift by selectLift using DOTween

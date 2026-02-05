@@ -100,6 +100,12 @@ public class GirdAreaController : MonoBehaviour
                     cellComp.reel = null;
                 }
 
+                // Deactivate border cells so they are not active/interactive
+                if (x == 0 || z == 0 || x == countX - 1 || z == countZ - 1)
+                {
+                    instance.SetActive(false);
+                }
+
 #if UNITY_EDITOR
                 // Undo desteði ile oluþturmayý kaydet
                 Undo.RegisterCreatedObjectUndo(instance, "Create Grid Cell");
@@ -164,6 +170,7 @@ public class GirdAreaController : MonoBehaviour
     // Movement is allowed only through empty cells (gridArray[x][z] == null or gridArray[x][z].reel == null).
     // The start and end cells are allowed to be occupied (they are considered walkable).
     // from/to are expected to contain integer-like coordinates (x,z). Returns true if a path found and outputs the path as array of Vector2 (grid indices).
+    // Updated: Instead of shortest path, choose path with minimum number of turns (direction changes). Distance is ignored.
     public bool TryToReach(Vector2 from, Vector2 to, out Vector2[] path)
     {
         BuildGridArray(); // ensure up-to-date
@@ -181,92 +188,93 @@ public class GirdAreaController : MonoBehaviour
         if (sx < 0 || sx >= countX || sz < 0 || sz >= countZ) return false;
         if (tx < 0 || tx >= countX || tz < 0 || tz >= countZ) return false;
 
-        // A* implementation
-        bool[,] closed = new bool[countX, countZ];
-        Node[,] nodes = new Node[countX, countZ];
-        var open = new List<Node>();
+        // if same cell
+        if (sx == tx && sz == tz)
+        {
+            path = new Vector2[] { new Vector2(sx, sz) };
+            return true;
+        }
 
-        Node start = new Node(sx, sz, 0, Heuristic(sx, sz, tx, tz), null);
-        nodes[sx, sz] = start;
-        open.Add(start);
+        // Dijkstra-like search minimizing number of turns (direction changes). Distance is ignored.
+        // State includes current direction to count turns properly.
+        int dirs = neighborOffsets.Length; // should be 4
+
+        // bestTurns[x,z,dir] = minimal turns to reach (x,z) when arriving with direction 'dir'
+        int[,,] bestTurns = new int[countX, countZ, dirs];
+        for (int x = 0; x < countX; x++) for (int z = 0; z < countZ; z++) for (int d = 0; d < dirs; d++) bestTurns[x, z, d] = int.MaxValue;
+
+        var open = new List<TurnNode>();
+
+        // start node
+        TurnNode startNode = new TurnNode(sx, sz, -1, 0, 0, null);
+        open.Add(startNode);
 
         while (open.Count > 0)
         {
-            // get node with lowest f
-            Node current = open[0];
-            for (int i = 1; i < open.Count; i++) if (open[i].f < current.f) current = open[i];
+            // pick node with minimal turns, tie-breaker minimal steps
+            TurnNode current = open[0];
+            for (int i = 1; i < open.Count; i++)
+            {
+                var n = open[i];
+                if (n.turns < current.turns || (n.turns == current.turns && n.steps < current.steps)) current = n;
+            }
             open.Remove(current);
 
-            if (current.x == tx && current.z == tz)
-            {
-                // reconstruct path
-                var rev = new List<Vector2>();
-                Node p = current;
-                while (p != null)
-                {
-                    rev.Add(new Vector2(p.x, p.z));
-                    p = p.parent;
-                }
-                rev.Reverse();
-
-                // count direction changes (turns) along the path
-                int turns = 1;
-                if (rev.Count >= 3)
-                {
-                    Vector2 prevDir = rev[1] - rev[0];
-                    for (int i = 2; i < rev.Count; i++)
-                    {
-                        Vector2 dir = rev[i] - rev[i - 1];
-                        if (dir != prevDir) turns++;
-                        prevDir = dir;
-                        // early exit: if turns reach 4 or more, reject this path
-                        if (turns >= 4) break;
-                    }
-                }
-
-                if (turns >= 4)
-                {
-                    // reject this found path and continue searching for alternative paths
-                    continue;
-                }
-
-                path = rev.ToArray();
-                return true;
-            }
-
-            closed[current.x, current.z] = true;
-
-            // neighbors 4-dir
+            // expand neighbors
             foreach (var nOff in neighborOffsets)
             {
+                int ndir = GetDirectionIndex(nOff.x, nOff.z);
                 int nx = current.x + nOff.x;
                 int nz = current.z + nOff.z;
                 if (nx < 0 || nz < 0 || nx >= countX || nz >= countZ) continue;
-                if (closed[nx, nz]) continue;
 
                 // walkable if empty OR it's the target OR it's the start
                 bool walkable = (gridArray[nx][nz] == null || gridArray[nx][nz].reel == null) || (nx == tx && nz == tz) || (nx == sx && nz == sz);
                 if (!walkable) continue;
 
-                int ng = current.g + 1;
-                Node existing = nodes[nx, nz];
-                if (existing == null)
+                int newTurns = current.dir == -1 ? 0 : (current.dir == ndir ? current.turns : current.turns + 1);
+                if (newTurns >= 4) continue; // reject paths with 4 or more turns
+
+                int newSteps = current.steps + 1;
+
+                // if this state improves bestTurns, push
+                if (newTurns < bestTurns[nx, nz, ndir])
                 {
-                    existing = new Node(nx, nz, ng, Heuristic(nx, nz, tx, tz), current);
-                    nodes[nx, nz] = existing;
-                    open.Add(existing);
-                }
-                else if (ng < existing.g)
-                {
-                    existing.g = ng;
-                    existing.f = ng + existing.h;
-                    existing.parent = current;
-                    if (!open.Contains(existing)) open.Add(existing);
+                    bestTurns[nx, nz, ndir] = newTurns;
+                    var node = new TurnNode(nx, nz, ndir, newTurns, newSteps, current);
+
+                    // if reached target, reconstruct path
+                    if (nx == tx && nz == tz)
+                    {
+                        // build path by walking parents (includes start node with dir=-1)
+                        var rev = new List<Vector2>();
+                        TurnNode p = node;
+                        while (p != null)
+                        {
+                            rev.Add(new Vector2(p.x, p.z));
+                            p = p.parent;
+                        }
+                        rev.Reverse();
+                        path = rev.ToArray();
+                        return true;
+                    }
+
+                    open.Add(node);
                 }
             }
         }
 
         return false;
+    }
+
+    // helper to map offset to direction index
+    static int GetDirectionIndex(int dx, int dz)
+    {
+        // neighborOffsets: { (1,0), (-1,0), (0,1), (0,-1) }
+        if (dx == 1 && dz == 0) return 0;
+        if (dx == -1 && dz == 0) return 1;
+        if (dx == 0 && dz == 1) return 2;
+        return 3;
     }
 
     class Node
@@ -278,6 +286,21 @@ public class GirdAreaController : MonoBehaviour
         public Node(int x, int z, int g, int h, Node parent)
         {
             this.x = x; this.z = z; this.g = g; this.h = h; this.f = g + h; this.parent = parent;
+        }
+    }
+
+    // TurnNode moved to class scope to be a valid C# type
+    class TurnNode
+    {
+        public int x, z;
+        public int dir; // -1 = start (no direction yet), otherwise 0..3 matching neighborOffsets
+        public int turns; // number of direction changes so far
+        public int steps; // number of steps taken (used only to break ties)
+        public TurnNode parent;
+
+        public TurnNode(int x, int z, int dir, int turns, int steps, TurnNode parent)
+        {
+            this.x = x; this.z = z; this.dir = dir; this.turns = turns; this.steps = steps; this.parent = parent;
         }
     }
 

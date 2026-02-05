@@ -15,11 +15,6 @@ public class GridAreaFiller : MonoBehaviour
     [Tooltip("Reference to the GridAreaController to fill")]
     public GirdAreaController gridAreaController;
 
-    void Start()
-    {
-        // keep original behavior: fill at start
-        FillGridRandomlyInternal();
-    }
 
     [ContextMenu("Fill Grid Randomly")]
     public void FillGridRandomly()
@@ -49,6 +44,13 @@ public class GridAreaFiller : MonoBehaviour
         int countZ = Mathf.Max(0, Mathf.RoundToInt(gridAreaController.size.y));
         if (countX == 0 || countZ == 0) return;
 
+        // do not allow filling edge cells: need at least 3x3 to have inner cells
+        if (countX <= 2 || countZ <= 2)
+        {
+            Debug.Log("GridAreaFiller: grid too small to have inner (non-edge) cells. No reels will be placed.");
+            return;
+        }
+
         int min = Mathf.RoundToInt(Mathf.Min(reelCountRange.x, reelCountRange.y));
         int max = Mathf.RoundToInt(Mathf.Max(reelCountRange.x, reelCountRange.y));
         int toSpawn = Random.Range(min, max + 1);
@@ -63,10 +65,11 @@ public class GridAreaFiller : MonoBehaviour
         }
 
         // gather empty cell coords (do NOT clear existing reels; fill on top of current state)
+        // Skip edge cells: start from 1 and end at count-2
         var emptyCells = new List<(int x, int z)>();
-        for (int x = 0; x < countX; x++)
+        for (int x = 1; x < countX - 1; x++)
         {
-            for (int z = 0; z < countZ; z++)
+            for (int z = 1; z < countZ - 1; z++)
             {
                 bool occupied = gridAreaController.gridArray != null && gridAreaController.gridArray[x][z] != null && gridAreaController.gridArray[x][z].reel != null;
                 if (!occupied) emptyCells.Add((x, z));
@@ -75,7 +78,7 @@ public class GridAreaFiller : MonoBehaviour
 
         if (emptyCells.Count == 0)
         {
-            Debug.Log("GridAreaFiller: no empty cells to populate.");
+            Debug.Log("GridAreaFiller: no inner empty cells to populate.");
             return;
         }
 
@@ -125,7 +128,8 @@ public class GridAreaFiller : MonoBehaviour
 
                 // determine max level from levelGraphics if available, otherwise default to 3
                 int maxLevel = 3;
-                if (inst.levelGraphics != null && inst.levelGraphics.Length > 0) maxLevel = inst.levelGraphics.Length;
+                if (inst.levelGraphics != null && inst.levelGraphics.Length > 0) 
+                    maxLevel = inst.levelGraphics.Length;
 
                 // Restrict maximum level to current order level if OrderManager exists
                 if (OrderManager.Instance != null && OrderManager.Instance.orders != null && OrderManager.Instance.orders.Length > 0)
@@ -137,7 +141,7 @@ public class GridAreaFiller : MonoBehaviour
                     maxLevel = Mathf.Min(maxLevel, orderLevel);
                 }
 
-                int randLevel = Random.Range(1, maxLevel + 1);
+                int randLevel = Random.Range(1, maxLevel);
 
                 // set data (isOrder = false)
                 inst.SetData(randLevel, randColor, false);
