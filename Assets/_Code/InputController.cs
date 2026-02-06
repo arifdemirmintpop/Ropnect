@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 
 public class InputController : MonoBehaviour
@@ -11,10 +12,6 @@ public class InputController : MonoBehaviour
 
     // vertical offset to raise the line above ground so it's visible
     const float pathHeightOffset = 0.15f;
-
-    // short lock to prevent ClearPath immediately after DrawPath
-    const float pathLockDuration = 0.25f;
-    float pathLockUntil = 0f;
 
     void Update()
     {
@@ -35,7 +32,6 @@ public class InputController : MonoBehaviour
             firstSelectedCell = null;
 
             // clear path visualization
-            ClearPath();
             return;
         }
 
@@ -49,7 +45,6 @@ public class InputController : MonoBehaviour
             firstSelectedCell = null;
 
             // clear path visualization
-            ClearPath();
             return;
         }
 
@@ -101,7 +96,6 @@ public class InputController : MonoBehaviour
         firstSelectedCell.reel.Select();
 
         // clear any previous path
-        ClearPath();
     }
 
     void OnSecondSelected(GridAreaCell secondCell)
@@ -128,8 +122,6 @@ public class InputController : MonoBehaviour
 
         Debug.Log($"InputController: TryToReach returned canReach={canReach}, pathLength={(path==null?0:path.Length)}");
 
-        // draw whatever path was returned (if any) regardless of canReach
-        DrawPath(path, grid);
 
         if (!canReach)
         {
@@ -150,7 +142,8 @@ public class InputController : MonoBehaviour
             OnWrongLevel(secondCell);
             return;
         }
-
+        // draw whatever path was returned (if any) regardless of canReach
+        DrawPath(path, grid);
         // If all good, CanMerge
         OnCanMerge(secondCell);
     }
@@ -161,12 +154,11 @@ public class InputController : MonoBehaviour
         if (firstCell == null || firstCell.reel == null || secondCell == null || secondCell.reel == null)
         {
             firstSelectedCell = null;
-            ClearPath();
             return;
         }
 
         // Increase level of second reel
-        secondCell.reel.LevelUp();
+        secondCell.reel.LevelUp(ClearPath);
 
         // animate first to scale 0 then destroy
         var toRemove = firstCell.reel;
@@ -175,28 +167,17 @@ public class InputController : MonoBehaviour
             toRemove.Deselect();
             // clear cell reference immediately
             firstCell.reel = null;
-            StartCoroutine(ScaleAndDestroy(toRemove.gameObject));
+            toRemove.transform.DOScale(Vector3.zero, 0.3f)
+                .SetEase(Ease.InBack)
+                .OnComplete(() =>
+            {
+                Destroy(toRemove.gameObject);
+            });
         }
 
         // after merge reset first selection
         firstSelectedCell = null;
 
-        // clear path visualization
-        ClearPath();
-    }
-
-    System.Collections.IEnumerator ScaleAndDestroy(GameObject go)
-    {
-        float dur = 0.3f;
-        Vector3 start = go.transform.localScale;
-        float t = 0f;
-        while (t < dur)
-        {
-            t += Time.deltaTime;
-            go.transform.localScale = Vector3.Lerp(start, Vector3.zero, t / dur);
-            yield return null;
-        }
-        Destroy(go);
     }
 
     void ResetFirstSelectionVisual(GridAreaCell firstCell)
@@ -213,86 +194,37 @@ public class InputController : MonoBehaviour
         ResetFirstSelectionVisual(firstSelectedCell);
         // set second as new first
         firstSelectedCell = secondCell;
-        if (firstSelectedCell.reel != null) firstSelectedCell.reel.Select();
-
-        // do not clear path here so user can inspect the proposed route
+        if (firstSelectedCell.reel != null) 
+            firstSelectedCell.reel.Select();
     }
 
     void OnWrongColor(GridAreaCell secondCell)
     {
         ResetFirstSelectionVisual(firstSelectedCell);
         firstSelectedCell = secondCell;
-        if (firstSelectedCell.reel != null) firstSelectedCell.reel.Select();
-
-        // do not clear path here so user can inspect the proposed route
+        if (firstSelectedCell.reel != null) 
+            firstSelectedCell.reel.Select();
     }
 
     void OnCantReach(GridAreaCell secondCell)
     {
         ResetFirstSelectionVisual(firstSelectedCell);
         firstSelectedCell = secondCell;
-        if (firstSelectedCell.reel != null) firstSelectedCell.reel.Select();
-
-        // keep the drawn path (if any) so user can see attempted route
+        if (firstSelectedCell.reel != null) 
+            firstSelectedCell.reel.Select();
     }
 
     void OnTooMuchTurn(GridAreaCell secondCell)
     {
         ResetFirstSelectionVisual(firstSelectedCell);
         firstSelectedCell = secondCell;
-        if (firstSelectedCell.reel != null) firstSelectedCell.reel.Select();
-
-        // keep the path so the player can see why it's invalid
+        if (firstSelectedCell.reel != null) 
+            firstSelectedCell.reel.Select();
     }
 
-    // LineRenderer helpers
-    void EnsurePathRenderer()
-    {
-        if (pathRenderer != null) return;
-        pathRenderer = GetComponent<LineRenderer>();
-        if (pathRenderer != null) return;
-
-        Debug.Log("InputController: creating LineRenderer for path visualization.");
-        pathRenderer = gameObject.AddComponent<LineRenderer>();
-        pathRenderer.material = new Material(Shader.Find("Sprites/Default"));
-        pathRenderer.widthMultiplier = 0.1f;
-        // prefer an unlit color shader for clear visibility
-        var mat = new Material(Shader.Find("Sprites/Default"));
-        mat.color = Color.cyan;
-        pathRenderer.material = mat;
-        // set widths
-        pathRenderer.startWidth = 0.25f;
-        pathRenderer.endWidth = 0.25f;
-        pathRenderer.loop = false;
-        pathRenderer.positionCount = 0;
-        pathRenderer.numCapVertices = 2;
-        pathRenderer.numCapVertices = 8;
-        pathRenderer.useWorldSpace = true;
-        pathRenderer.startColor = Color.cyan;
-        pathRenderer.endColor = Color.cyan;
-        pathRenderer.enabled = false;
-
-        // rendering tweaks for visibility
-        pathRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
-        pathRenderer.receiveShadows = false;
-        pathRenderer.alignment = LineAlignment.View;
-        var rend = pathRenderer.GetComponent<Renderer>();
-        if (rend != null) rend.sortingOrder = 1000;
-    }
 
     void DrawPath(Vector2[] path, GirdAreaController grid)
     {
-        if (path == null || path.Length == 0)
-        {
-            ClearPath();
-            Debug.Log("DrawPath: no path to draw.");
-            return;
-        }
-
-        EnsurePathRenderer();
-
-        Debug.Log($"DrawPath: drawing path with {path.Length} nodes.");
-
         var positions = new Vector3[path.Length];
 
         // try to find world positions from existing cell transforms
@@ -331,23 +263,16 @@ public class InputController : MonoBehaviour
                 positions[i] = grid.transform.TransformPoint(localPos) + Vector3.up * pathHeightOffset;
             }
 
-            Debug.Log($"DrawPath: node {i} -> grid ({path[i].x},{path[i].y}) -> world {positions[i]}");
         }
 
         pathRenderer.positionCount = positions.Length;
         pathRenderer.SetPositions(positions);
         pathRenderer.enabled = true;
         // lock clearing for a short moment so immediate ClearPath calls don't hide it
-        pathLockUntil = Time.time + pathLockDuration;
-        Debug.Log($"DrawPath: renderer enabled, positionCount={pathRenderer.positionCount}");
     }
 
     void ClearPath()
     {
-        // respect temporary lock to avoid immediate clearing after drawing
-        if (Time.time < pathLockUntil) return;
-
-        if (pathRenderer == null) return;
         pathRenderer.positionCount = 0;
         pathRenderer.enabled = false;
         Debug.Log("ClearPath: path cleared.");

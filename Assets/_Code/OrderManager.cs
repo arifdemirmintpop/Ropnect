@@ -53,8 +53,7 @@ public class OrderManager : MonoSingleton<OrderManager>
         CreateOrder();
 
         // after creating new order, attempt to complete with existing reels
-        var copy = new List<ReelController>(reels);
-        foreach (var r in copy)
+        foreach (var r in reels)
         {
             TryToCompleteOrder(r);
         }
@@ -74,8 +73,7 @@ public class OrderManager : MonoSingleton<OrderManager>
             CreateOrder();
 
             // after creating new order, attempt to complete with existing reels
-            var copy = new List<ReelController>(reels);
-            foreach (var r in copy)
+            foreach (var r in reels)
             {
                 TryToCompleteOrder(r);
             }

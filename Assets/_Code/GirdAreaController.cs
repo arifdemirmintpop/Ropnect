@@ -323,4 +323,11 @@ public class GirdAreaController : MonoBehaviour
     {
 
     }
+
+    public enum PathResult
+    {
+        NoPath,
+        TooMuchTurn,
+        Success
+    }
 }

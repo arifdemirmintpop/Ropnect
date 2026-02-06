@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using TMPro;
 using DG.Tweening;
+using System;
 
 public class ReelController : MonoBehaviour
 {
@@ -120,7 +121,7 @@ public class ReelController : MonoBehaviour
         mat.SetTextureOffset("_BaseMap", new Vector2(0f, y));
     }
 
-    public void LevelUp()
+    public void LevelUp(Action afterLevelUp)
     {
         // animate exp from 0 to 1, then increase level and refresh visuals
         expTween?.Kill();
@@ -143,6 +144,8 @@ public class ReelController : MonoBehaviour
                 // after leveling up, if there's a matching order, request to join it
                 if (OrderManager.Instance != null)
                     TryJoinOrder();
+
+                afterLevelUp?.Invoke();
             });
     }
 

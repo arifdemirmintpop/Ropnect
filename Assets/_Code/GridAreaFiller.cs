@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -14,6 +15,15 @@ public class GridAreaFiller : MonoBehaviour
 
     [Tooltip("Reference to the GridAreaController to fill")]
     public GirdAreaController gridAreaController;
+
+    [Tooltip("Yukarýdan kaç birim yükseklikten düþecek (local Y)")]
+    public float spawnDropHeight = 2f;
+
+    [Tooltip("Düþme animasyonunun süresi (saniye)")]
+    public float spawnDropDuration = 0.4f;
+
+    [Tooltip("Düþme animasyonu easing tipi")]
+    public Ease spawnDropEase = Ease.InQuad;
 
 
     [ContextMenu("Fill Grid Randomly")]
@@ -148,9 +158,12 @@ public class GridAreaFiller : MonoBehaviour
 
                 // ensure naming and local transform for instantiated prefab
                 inst.gameObject.name = $"Reel_{coord.x}_{coord.z}";
-                inst.transform.localPosition = Vector3.zero;
                 inst.transform.localRotation = Quaternion.identity;
                 inst.transform.localScale = Vector3.one;
+
+                // place above and animate dropping to cell's local origin using DOTween
+                inst.transform.localPosition = Vector3.up * spawnDropHeight;
+                inst.transform.DOLocalMove(Vector3.zero, spawnDropDuration).SetEase(spawnDropEase);
 
                 // update grid array entry to reference this reel
                 var cellComp = gridAreaController.gridArray[coord.x][coord.z];
@@ -163,7 +176,6 @@ public class GridAreaFiller : MonoBehaviour
 
         // refresh to ensure consistency
         gridAreaController.BuildGridArray();
-
         Debug.Log($"GridAreaFiller: instantiated {toSpawn} reels.");
     }
 }
