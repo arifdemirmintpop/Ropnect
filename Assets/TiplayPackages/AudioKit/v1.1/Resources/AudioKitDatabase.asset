@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f26489ebfcf04fb18d514e69526b08d, type: 3}
+  m_Name: AudioKitDatabase
+  m_EditorClassIdentifier: 
+  SoundCategories:
+  - Category: 0
+    Sounds:
+    - SoundType: 0
+      AudioClip: {fileID: 8300000, guid: 9807f556208b144f08978c6bad9ca915, type: 3}
+      Volume: 1
+      VolumeVariance: 0
+      Pitch: 1
+      PitchVariance: 0
+      Islooping: 0
+      AudioSource: {fileID: 0}
+    - SoundType: 1
+      AudioClip: {fileID: 8300000, guid: 8a1fe9fb293704b97baaa713b0bbdfe8, type: 3}
+      Volume: 1
+      VolumeVariance: 0
+      Pitch: 1
+      PitchVariance: 0
+      Islooping: 0
+      AudioSource: {fileID: 0}
+    - SoundType: 2
+      AudioClip: {fileID: 8300000, guid: 33bed875266204062addfc9068482dad, type: 3}
+      Volume: 1
+      VolumeVariance: 0
+      Pitch: 1
+      PitchVariance: 0
+      Islooping: 0
+      AudioSource: {fileID: 0}
+    - SoundType: 3
+      AudioClip: {fileID: 8300000, guid: 356c378f32019446c85606d3ae0f3ab3, type: 3}
+      Volume: 1
+      VolumeVariance: 0
+      Pitch: 1
+      PitchVariance: 0
+      Islooping: 0
+      AudioSource: {fileID: 0}
+    - SoundType: 4
+      AudioClip: {fileID: 8300000, guid: 57d542101175149ab9886fc95c81f0e9, type: 3}
+      Volume: 1
+      VolumeVariance: 0
+      Pitch: 1
+      PitchVariance: 0
+      Islooping: 0
+      AudioSource: {fileID: 0}
+  - Category: 1
+    Sounds: []

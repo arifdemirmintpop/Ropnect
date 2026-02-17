@@ -1,0 +1,276 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dafca990b3e2147baa5a46bf53d23f4c, type: 3}
+  m_Name: Database
+  m_EditorClassIdentifier: 
+  BlockerDatabase:
+    Blockers: []
+  InventoryDatabase:
+    Money: 0
+  LevelDatabase:
+    LevelIndex: 0
+    LevelTextValue: 1
+    LoopStartIndex: 0
+    LevelOrder: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f0000002000000021000000220000002300000024000000250000002600000027000000
+    Levels:
+    - Name: Level 1
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 2
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 3
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 4
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 5
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 6
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 7
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 8
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 9
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 10
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 11
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 12
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 13
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 14
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 15
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 16
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 17
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 18
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 19
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 20
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 21
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 22
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 23
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 24
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 25
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 26
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 27
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 28
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 29
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 30
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 31
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 32
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 33
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 34
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 35
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 36
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 37
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 38
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 39
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+    - Name: Level 40
+      Difficulty: 0
+      IsSkippedAfterLoop: 0
+      Duration: 0
+      MoveCount: 0
+      SlotCount: 0
+  PreferenceDatabase:
+    HasAudio: 0
+    IsVibrationEnable: 1
+    IsAudioEnable: 1
+    IsMusicEnable: 1
+  UserEngagementDatabase:
+    IsUpdatedUser: 0
+    InstallTimestamp: 1754045538
+    TotalPlaytime: 4
+  VersionDatabase:
+    Version: 0.1
+    BuildNumber: 

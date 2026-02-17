@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83809b510bba442ee995850c058bfb50, type: 3}
+  m_Name: GlobalData
+  m_EditorClassIdentifier: 
+  defaultBuildSettings: {fileID: 11400000, guid: 228c5036c7e154694bae5b581acc5733, type: 2}
+  androidBuildSettings: {fileID: 11400000, guid: 193ad72877e004b43bf39b813c0b5f9b, type: 2}
+  iosBuildSettings: {fileID: 11400000, guid: 23cad272203654bf0b2108e5cf216c5a, type: 2}
+  database: {fileID: 11400000, guid: 83926b67faf6442149014b43d0621893, type: 2}
+  updaterDatabase: {fileID: 11400000, guid: 4470c0cef02934742be6d4a547cb7b77, type: 2}
+  gameAnalyticsPrefab: {fileID: 165288, guid: a9d27d37bab3c447b8eb7a2a6756e952, type: 3}
+  tibugPrefab: {fileID: 535025694901922800, guid: eec54e760c83d43e6af58aac22c95905, type: 3}

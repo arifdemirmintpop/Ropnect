@@ -125,6 +125,8 @@ public class InputController : MonoBehaviour
 
         if (!canReach)
         {
+            // draw whatever path was returned (if any) regardless of canReach
+            DrawPath(path, grid, Color.red);
             OnCantReach(secondCell);
             return;
         }
@@ -143,7 +145,7 @@ public class InputController : MonoBehaviour
             return;
         }
         // draw whatever path was returned (if any) regardless of canReach
-        DrawPath(path, grid);
+        DrawPath(path, grid, Color.green);
         // If all good, CanMerge
         OnCanMerge(secondCell);
     }
@@ -223,8 +225,30 @@ public class InputController : MonoBehaviour
     }
 
 
-    void DrawPath(Vector2[] path, GirdAreaController grid)
+    void DrawPath(Vector2[] path, GirdAreaController grid, Color lineColor)
     {
+        // handle null or empty path
+        if (path == null || path.Length == 0)
+        {
+            ClearPath();
+            return;
+        }
+
+        // ensure a LineRenderer exists
+        if (pathRenderer == null)
+        {
+            var go = new GameObject("PathRenderer");
+            go.transform.SetParent(this.transform, false);
+            pathRenderer = go.AddComponent<LineRenderer>();
+            // simple default material
+            var mat = new Material(Shader.Find("Sprites/Default"));
+            pathRenderer.material = mat;
+            pathRenderer.widthMultiplier = 0.12f;
+            pathRenderer.useWorldSpace = true;
+            pathRenderer.loop = false;
+            pathRenderer.numCapVertices = 8;
+        }
+
         var positions = new Vector3[path.Length];
 
         // try to find world positions from existing cell transforms
@@ -245,7 +269,6 @@ public class InputController : MonoBehaviour
 
             if (cellT != null)
             {
-                positions[i] = cellT.position;
                 positions[i] = cellT.position + Vector3.up * pathHeightOffset;
             }
             else
@@ -259,20 +282,37 @@ public class InputController : MonoBehaviour
                 float startZ = -totalDepth * 0.5f;
 
                 Vector3 localPos = new Vector3(startX + x * grid.offset.x, 0f, startZ + z * grid.offset.y);
-                positions[i] = grid.transform.TransformPoint(localPos);
                 positions[i] = grid.transform.TransformPoint(localPos) + Vector3.up * pathHeightOffset;
             }
 
         }
 
+        // apply positions
         pathRenderer.positionCount = positions.Length;
         pathRenderer.SetPositions(positions);
         pathRenderer.enabled = true;
+
+        // apply color to line renderer (start/end and gradient)
+        try
+        {
+            pathRenderer.startColor = lineColor;
+            pathRenderer.endColor = lineColor;
+        }
+        catch { }
+
+        var grad = new Gradient();
+        grad.SetKeys(
+            new GradientColorKey[] { new GradientColorKey(lineColor, 0f), new GradientColorKey(lineColor, 1f) },
+            new GradientAlphaKey[] { new GradientAlphaKey(lineColor.a, 0f), new GradientAlphaKey(lineColor.a, 1f) }
+        );
+        pathRenderer.colorGradient = grad;
+
         // lock clearing for a short moment so immediate ClearPath calls don't hide it
     }
 
     void ClearPath()
     {
+        if (pathRenderer == null) return;
         pathRenderer.positionCount = 0;
         pathRenderer.enabled = false;
         Debug.Log("ClearPath: path cleared.");

@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 972063a8d7fa24fd3bd159cd68fe8e3c, type: 3}
+  m_Name: MoneyKitData
+  m_EditorClassIdentifier: 
+  moneyBar: {fileID: 7198638459609044166, guid: 19891db091eee4e17add1a25fc2219da, type: 3}

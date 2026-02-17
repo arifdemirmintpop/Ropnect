@@ -1,0 +1,4472 @@
+fileFormatVersion: 2
+guid: 55e249ec38e51458cb8677331b3d6943
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fixed_Block_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9492
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55e49530b8ba4814ab6c9a589a9b134
+      internalID: -122634913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_1
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 9492
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4683adb325eba464d96854ff5bc42c68
+      internalID: 583342274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_2
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 9492
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687ab22b3494440cc9c7de535095a989
+      internalID: 1965519412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_3
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 9492
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6d626d9dffae42daa704ae68a5baad1
+      internalID: -1110477848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_4
+      rect:
+        serializedVersion: 2
+        x: 2736
+        y: 9492
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3346acaa3e44ac4bc3a6275170b449
+      internalID: -673972910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_5
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 9492
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f64fbc91dee416999c8ff8e314444f
+      internalID: 1635792097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_6
+      rect:
+        serializedVersion: 2
+        x: 4104
+        y: 9492
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65614989eee054df587013ae39c6da2f
+      internalID: -1705109534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_7
+      rect:
+        serializedVersion: 2
+        x: 4788
+        y: 9492
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8e6a9166f914cb59091885230c87a0
+      internalID: 2090515112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_8
+      rect:
+        serializedVersion: 2
+        x: 5472
+        y: 9492
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aebe40f8ef364af0b4195ad071b73c2
+      internalID: -192395320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_9
+      rect:
+        serializedVersion: 2
+        x: 6156
+        y: 9492
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c92d419987104a549990500991f5e08
+      internalID: -1741043079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_10
+      rect:
+        serializedVersion: 2
+        x: 6840
+        y: 9492
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c47d4ad8b6746c8b8e28720967b8af
+      internalID: 1320481456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_11
+      rect:
+        serializedVersion: 2
+        x: 7524
+        y: 9492
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f047aa68683954d03849be0996b212cc
+      internalID: 982886259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_12
+      rect:
+        serializedVersion: 2
+        x: 8208
+        y: 9492
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f3250a185674a47a4eab21b0ffe987
+      internalID: -866241610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_13
+      rect:
+        serializedVersion: 2
+        x: 8892
+        y: 9492
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07776ec3628694dd69f84cadffde3224
+      internalID: -436897129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_14
+      rect:
+        serializedVersion: 2
+        x: 9576
+        y: 9492
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b4acc9c4c2534d0ab52475e2b954f72
+      internalID: 1869838717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_15
+      rect:
+        serializedVersion: 2
+        x: 10260
+        y: 9492
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ea0410281c7d43c6a3125943dfad748
+      internalID: 635550881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8701
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37cbc7eabe5ae4ac3a64329f436d3323
+      internalID: -353899817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_17
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 8701
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8765fbcd67354bd09ae8ec35d3a611a
+      internalID: -2137957476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_18
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 8701
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30da3077a96fe4a718483c19c0e6e803
+      internalID: -534330316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_19
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 8701
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754548e9af25c485b9a3e488b7bc414f
+      internalID: -150261643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_20
+      rect:
+        serializedVersion: 2
+        x: 2736
+        y: 8701
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad24d5a2bfb04d508896f2035494b47
+      internalID: -872294589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_21
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 8701
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f06edd7ad1c462e9ffe4e09311f085
+      internalID: 996632453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_22
+      rect:
+        serializedVersion: 2
+        x: 4104
+        y: 8701
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86427e745bc6a4c4cb81ab04016ed868
+      internalID: 1683870257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_23
+      rect:
+        serializedVersion: 2
+        x: 4788
+        y: 8701
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea324901baf9444b2a6657811bc1daf5
+      internalID: -1112530930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_24
+      rect:
+        serializedVersion: 2
+        x: 5472
+        y: 8701
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51070523a613423d93ff8acee0c3057
+      internalID: 757346216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_25
+      rect:
+        serializedVersion: 2
+        x: 6156
+        y: 8701
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b026cadbe334b418f29762dd58d1aa
+      internalID: 1556091782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_26
+      rect:
+        serializedVersion: 2
+        x: 6840
+        y: 8701
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f13f2af973344023a3fe095dc1911df
+      internalID: 35370043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_27
+      rect:
+        serializedVersion: 2
+        x: 7524
+        y: 8701
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c32167ab8da4ce3acb83fa4a59a395
+      internalID: -677807524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_28
+      rect:
+        serializedVersion: 2
+        x: 8208
+        y: 8701
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b6bf06a9a0240988e25f9c9cbe7f31
+      internalID: 511760259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_29
+      rect:
+        serializedVersion: 2
+        x: 8892
+        y: 8701
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac68250bbe1604fa09ac64a9420c7d20
+      internalID: 1783985253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_30
+      rect:
+        serializedVersion: 2
+        x: 9576
+        y: 8701
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113e0f3962d4a4b5783873fdece0d36e
+      internalID: -738904810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_31
+      rect:
+        serializedVersion: 2
+        x: 10260
+        y: 8701
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f317af5e9420240bf951e7dd56047433
+      internalID: -931776596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7910
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d08d1affaab4f4c40902b6abbf323d9c
+      internalID: 421071408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_33
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 7910
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d930830dc24c6452b937ff3953dd659b
+      internalID: -1287210505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_34
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 7910
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5af1622e7a0f4019a21b669adc4e1bb
+      internalID: 925722891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_35
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 7910
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41bf986465f6043418dad6000dcb0807
+      internalID: 2029820671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_36
+      rect:
+        serializedVersion: 2
+        x: 2736
+        y: 7910
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 506600a2c32fb454783f7941731e362b
+      internalID: -1234171535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_37
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 7910
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a34d1f596f44581bd34e79be76875b
+      internalID: 508241536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_38
+      rect:
+        serializedVersion: 2
+        x: 4104
+        y: 7910
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3659efad715c14e2292e94e2ea44a2c4
+      internalID: -50935692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_39
+      rect:
+        serializedVersion: 2
+        x: 4788
+        y: 7910
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432ca4f90a0eb4ac9873ecad805ad07b
+      internalID: -1029653231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_40
+      rect:
+        serializedVersion: 2
+        x: 5472
+        y: 7910
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f66ca2c0e424865b81ae18f6c1e2f4
+      internalID: 191309462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_41
+      rect:
+        serializedVersion: 2
+        x: 6156
+        y: 7910
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad09711c872ac4fb3aa17fe3c03402a4
+      internalID: 1719898689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_42
+      rect:
+        serializedVersion: 2
+        x: 6840
+        y: 7910
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52aa8d6f1721d425a906697bb98f4b15
+      internalID: 818103129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_43
+      rect:
+        serializedVersion: 2
+        x: 7524
+        y: 7910
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14efa44a167a48528fd3469d2b1525f
+      internalID: 1460599718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_44
+      rect:
+        serializedVersion: 2
+        x: 8208
+        y: 7910
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adebd0eda1b4b4cde9d62cc71df3fbef
+      internalID: -2025730897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_45
+      rect:
+        serializedVersion: 2
+        x: 8892
+        y: 7910
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0621b2d537eb64c09a3ac7b79ad40384
+      internalID: 1079237743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_46
+      rect:
+        serializedVersion: 2
+        x: 9576
+        y: 7910
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c38a7a4431ff34473be797ec518b9899
+      internalID: -352748491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_47
+      rect:
+        serializedVersion: 2
+        x: 10260
+        y: 7910
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3724f3d13624ff1b43449f347261db
+      internalID: -1190955524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7119
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869da4dddbbd345b2a30cd594c754471
+      internalID: -1693795213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_49
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 7119
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db83d9731002843fb848a75790e30853
+      internalID: 1324390814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_50
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 7119
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0e6ab2a75404eed8b59da3c8049abe
+      internalID: -1157445297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_51
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 7119
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ebaab785156740efa0a64e6674c1337
+      internalID: -1681434262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_52
+      rect:
+        serializedVersion: 2
+        x: 2736
+        y: 7119
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed6917fc50424b1c8867bccfd6885ea
+      internalID: 573440940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_53
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 7119
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f11fbd1f12e43bfb37e43cd37dd9b1
+      internalID: -1155350558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_54
+      rect:
+        serializedVersion: 2
+        x: 4104
+        y: 7119
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4374fde7a01c94b8f892418eeff1786c
+      internalID: 2036549627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_55
+      rect:
+        serializedVersion: 2
+        x: 4788
+        y: 7119
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5b1d1033f7a42bd89278a1c4965d42
+      internalID: -349211364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_56
+      rect:
+        serializedVersion: 2
+        x: 5472
+        y: 7119
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665d9d7133eac49c49ec35ba0401a927
+      internalID: 1222108233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_57
+      rect:
+        serializedVersion: 2
+        x: 6156
+        y: 7119
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9a3ed942f994534abe97ad8a6a03fd
+      internalID: 179752408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_58
+      rect:
+        serializedVersion: 2
+        x: 6840
+        y: 7119
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2faa16a1e485749068361ad9fc4da289
+      internalID: -1074212667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_59
+      rect:
+        serializedVersion: 2
+        x: 7524
+        y: 7119
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c65029e2856455abafd29e3dde5f71
+      internalID: -2068947708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_60
+      rect:
+        serializedVersion: 2
+        x: 8208
+        y: 7119
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4204088c9dd1b4e4f8e2c9aaeace887a
+      internalID: 1945212352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_61
+      rect:
+        serializedVersion: 2
+        x: 8892
+        y: 7119
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197f2879edaf44094a63d23e6c289026
+      internalID: -1629131423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_62
+      rect:
+        serializedVersion: 2
+        x: 9576
+        y: 7119
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56e6f6a27384b413187673b737fbf25e
+      internalID: -842680736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_63
+      rect:
+        serializedVersion: 2
+        x: 10260
+        y: 7119
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f980569e0140c4f55adcafe335085da3
+      internalID: -1401316919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6328
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432479309293240ebacfe3a4b23332f3
+      internalID: 59113265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_65
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 6328
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc94104dc4054489a2b84b8486b8037
+      internalID: -665381296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_66
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 6328
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18dcc079d012f4d3cad091a453ce4d87
+      internalID: 624078729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_67
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 6328
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c92ddbaf7706449c88c6eb52f08b9b0a
+      internalID: 1035045988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_68
+      rect:
+        serializedVersion: 2
+        x: 2736
+        y: 6328
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af1b1aa1062b40c0ba0a72dcd773429
+      internalID: -45676891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_69
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 6328
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea4abf2cefa54b52a0c6cfa6a00e6c4
+      internalID: -477983153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_70
+      rect:
+        serializedVersion: 2
+        x: 4104
+        y: 6328
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432cfb6459352460ab5519988608c68a
+      internalID: 1241042803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_71
+      rect:
+        serializedVersion: 2
+        x: 4788
+        y: 6328
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097c551fca0364cb99566143e81682e9
+      internalID: 1252535647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_72
+      rect:
+        serializedVersion: 2
+        x: 5472
+        y: 6328
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf8ac0e6b4e842758ae96952ff3002c
+      internalID: 1531926857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_73
+      rect:
+        serializedVersion: 2
+        x: 6156
+        y: 6328
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c18a750958c344769749fdc54c47b4b
+      internalID: -19928938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_74
+      rect:
+        serializedVersion: 2
+        x: 6840
+        y: 6328
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82cc49fa508144742a3b4e1a1ec3361d
+      internalID: 1980886126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_75
+      rect:
+        serializedVersion: 2
+        x: 7524
+        y: 6328
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc88b93beede41c8b8afdb791eef206
+      internalID: -1676913215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_76
+      rect:
+        serializedVersion: 2
+        x: 8208
+        y: 6328
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61516b8f0e53a4b69b66133c6a02ed0a
+      internalID: -1136742155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_77
+      rect:
+        serializedVersion: 2
+        x: 8892
+        y: 6328
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b00b3b1455b26436e81882ae49f3bad5
+      internalID: -107194120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_78
+      rect:
+        serializedVersion: 2
+        x: 9576
+        y: 6328
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ddcfc6b611a1431aa79f78ee34d281a
+      internalID: -655258204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_79
+      rect:
+        serializedVersion: 2
+        x: 10260
+        y: 6328
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5343efff8ad624adf9e2d93d80144948
+      internalID: -1193997030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5537
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f95b8d86675749e48739edb2b10e665
+      internalID: 321540000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_81
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 5537
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d398d88cfb1d4299ad245b0a5fd7f5f
+      internalID: 1587740205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_82
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 5537
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b30a6e6aa67a4f429e7428900451c3b
+      internalID: 1800627284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_83
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 5537
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f631e6b1257458e9f3e6957ef89d06
+      internalID: 1134858169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_84
+      rect:
+        serializedVersion: 2
+        x: 2736
+        y: 5537
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75943670c1c224c13a7a9ebfe742c751
+      internalID: -1807414794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_85
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 5537
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e20f3467d5c548f6b925c90bb03e67c
+      internalID: -1950902182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_86
+      rect:
+        serializedVersion: 2
+        x: 4104
+        y: 5537
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8f3deeb6c184d3280e8e0c5aea06d6
+      internalID: -817741502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_87
+      rect:
+        serializedVersion: 2
+        x: 4788
+        y: 5537
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d346dd37d864bbc84bcf7b4c45221e
+      internalID: 1942220344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_88
+      rect:
+        serializedVersion: 2
+        x: 5472
+        y: 5537
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc5cc7ff869141a38e42776a2db7d75
+      internalID: -954777684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_89
+      rect:
+        serializedVersion: 2
+        x: 6156
+        y: 5537
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a957d61e55d8349739729e04883b04fb
+      internalID: -879865440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_90
+      rect:
+        serializedVersion: 2
+        x: 6840
+        y: 5537
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e308ed1354994f7a908a95b5370e99a
+      internalID: -516388270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_91
+      rect:
+        serializedVersion: 2
+        x: 7524
+        y: 5537
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15512c69012a54a1f8b8126c999e7e99
+      internalID: -2053449097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_92
+      rect:
+        serializedVersion: 2
+        x: 8208
+        y: 5537
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b326d2553044e3a8acf537daada047
+      internalID: 1828897608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_93
+      rect:
+        serializedVersion: 2
+        x: 8892
+        y: 5537
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a41bd5dc869c4a238a271b7fd7a1dd5
+      internalID: 1276294019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_94
+      rect:
+        serializedVersion: 2
+        x: 9576
+        y: 5537
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4309153c1ad504d73944b02cd171bf44
+      internalID: -30391241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_95
+      rect:
+        serializedVersion: 2
+        x: 10260
+        y: 5537
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f980e96cb8d64eba9db0c9fb0cabe8d
+      internalID: 1962734486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4746
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5f9c3b98bd543b89036d7b6eaffe7d
+      internalID: -1327649785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_97
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 4746
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0572cd191cba0461790a5f806e700e8c
+      internalID: 580313572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_98
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 4746
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305b3b7f7da984c118b0184242ad536a
+      internalID: 25456857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_99
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 4746
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6f7dfc6b19f42b8a8b817e496f95bc
+      internalID: -164529495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_100
+      rect:
+        serializedVersion: 2
+        x: 2736
+        y: 4746
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afbc625fab2074833a3e3d9ac440e17e
+      internalID: -1695241853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_101
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 4746
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b641b7380b77a4ec0b6f5e3c7aa77ddf
+      internalID: 1266170272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_102
+      rect:
+        serializedVersion: 2
+        x: 4104
+        y: 4746
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b331a838c254cf484b4a828696c7d4
+      internalID: 1293423550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_103
+      rect:
+        serializedVersion: 2
+        x: 4788
+        y: 4746
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e542d35ad3554bcc91e84b5747b04aa
+      internalID: 926280980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_104
+      rect:
+        serializedVersion: 2
+        x: 5472
+        y: 4746
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e10d081c69d4582b423defe7df5818
+      internalID: 17686728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_105
+      rect:
+        serializedVersion: 2
+        x: 6156
+        y: 4746
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4244bf92c2a40cb867726b00596bce
+      internalID: -1887462979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_106
+      rect:
+        serializedVersion: 2
+        x: 6840
+        y: 4746
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b2bc56e08e74c9dae990fb89a4b2f8
+      internalID: 1034798142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_107
+      rect:
+        serializedVersion: 2
+        x: 7524
+        y: 4746
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced8a8f752fa944619fbaa523ec79173
+      internalID: -1915068953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_108
+      rect:
+        serializedVersion: 2
+        x: 8208
+        y: 4746
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e553d52b42844069ffc59ca5e06959
+      internalID: -1438024746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_109
+      rect:
+        serializedVersion: 2
+        x: 8892
+        y: 4746
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c6d747555b14456a426e735667dedb
+      internalID: 1761136311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_110
+      rect:
+        serializedVersion: 2
+        x: 9576
+        y: 4746
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c3e8a828836486bb2961d7ff834c7d
+      internalID: -1496925102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_111
+      rect:
+        serializedVersion: 2
+        x: 10260
+        y: 4746
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8c8f25886cc4ca599eae1049813277
+      internalID: 531791247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3955
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef9ae302a19941d9862619f40231a8f
+      internalID: 2010853227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_113
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 3955
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1568877b255a4d529c4a49bb7ee8143
+      internalID: 1004426212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_114
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 3955
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf9b0aebf47c410e8c31ea4ed40ed06
+      internalID: 787127237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_115
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 3955
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 555b3117ed01746dda335c29a6ceffcd
+      internalID: 1777632636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_116
+      rect:
+        serializedVersion: 2
+        x: 2736
+        y: 3955
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05323ce2f25f14106b57b77941392ca9
+      internalID: -2011039019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_117
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 3955
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa5ffa5511e54461a8dbf2e18251e6d
+      internalID: -1615622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_118
+      rect:
+        serializedVersion: 2
+        x: 4104
+        y: 3955
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a810efe526d1c49c78e298bb612ef015
+      internalID: -1522499155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_119
+      rect:
+        serializedVersion: 2
+        x: 4788
+        y: 3955
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0589474e483a4a0db78109e84f95f35
+      internalID: -1003576372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_120
+      rect:
+        serializedVersion: 2
+        x: 5472
+        y: 3955
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66305d200aa947dda16aba397485e5a
+      internalID: 153167823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_121
+      rect:
+        serializedVersion: 2
+        x: 6156
+        y: 3955
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6337d3dde4b64756bc55baecfc47a3d
+      internalID: 1198372166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_122
+      rect:
+        serializedVersion: 2
+        x: 6840
+        y: 3955
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc4dd9add41b480bbf0ff305ab449a2
+      internalID: 1385561748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_123
+      rect:
+        serializedVersion: 2
+        x: 7524
+        y: 3955
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48d8cb75ede442bab4ac708192e6552
+      internalID: -1002944702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_124
+      rect:
+        serializedVersion: 2
+        x: 8208
+        y: 3955
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10297927f23744dc4bbe82b7149fb12d
+      internalID: 800927095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_125
+      rect:
+        serializedVersion: 2
+        x: 8892
+        y: 3955
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e481f09d3cede4c90b68ac2a1aad9046
+      internalID: -1596160852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_126
+      rect:
+        serializedVersion: 2
+        x: 9576
+        y: 3955
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58295fc642dd4bad9e029f1211f1e54
+      internalID: -25061353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_127
+      rect:
+        serializedVersion: 2
+        x: 10260
+        y: 3955
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ebf8c96794e494fa7ee3f2c916dd8f
+      internalID: 934159064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_128
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3164
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a276185a59c4f01b6b7076ede79c5f
+      internalID: -2135040793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_129
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 3164
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eaacc562ef5f4f0e838b0f427cdd877
+      internalID: 541570429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_130
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 3164
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5bbd675dc2454c5b9dcd67ba92261aa
+      internalID: 803455262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_131
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 3164
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1e5ba04047e48a1bed794ce33691f1
+      internalID: 1448050826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_132
+      rect:
+        serializedVersion: 2
+        x: 2736
+        y: 3164
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5dc970bf4a714f5ab6f3a0eede0de19
+      internalID: 1764693703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_133
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 3164
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c6667c730a0484384b4a1cc3e9ba1d
+      internalID: -1228745706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_134
+      rect:
+        serializedVersion: 2
+        x: 4104
+        y: 3164
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b48c5da977c3f4ed79160418efd42395
+      internalID: -248092547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_135
+      rect:
+        serializedVersion: 2
+        x: 4788
+        y: 3164
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb727836e852487ca29e2b1785231b4
+      internalID: 1657758315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_136
+      rect:
+        serializedVersion: 2
+        x: 5472
+        y: 3164
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2979e6f843543fcb486e600d45d93b
+      internalID: 2023880827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_137
+      rect:
+        serializedVersion: 2
+        x: 6156
+        y: 3164
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb40952cb70f477ba28a3cb0ee51d86
+      internalID: -929873304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_138
+      rect:
+        serializedVersion: 2
+        x: 6840
+        y: 3164
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9543244bee694fb98d70473a0282b20
+      internalID: 1232967437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_139
+      rect:
+        serializedVersion: 2
+        x: 7524
+        y: 3164
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70925f3122064f62a3039d0c712bf5a
+      internalID: 1169464462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_140
+      rect:
+        serializedVersion: 2
+        x: 8208
+        y: 3164
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10036c58d2af84c38823b6aa1efcee92
+      internalID: 929987177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_141
+      rect:
+        serializedVersion: 2
+        x: 8892
+        y: 3164
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4194747cd93d24dd2b28a7e29a450bd3
+      internalID: 1299486114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_142
+      rect:
+        serializedVersion: 2
+        x: 9576
+        y: 3164
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b79a143a25044fb2be33f15f115b394
+      internalID: -1121960628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_143
+      rect:
+        serializedVersion: 2
+        x: 10260
+        y: 3164
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c48698806e1648b78c9f65d114ee9f5
+      internalID: -1295370932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2373
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f51580d7f3c7e49bdb543583e8e55182
+      internalID: -580360253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_145
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 2373
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0251cdfa69e94cc3a3bc8a745c0f5b6
+      internalID: 1356200014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_146
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 2373
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5331cebd2a64944a0c252cc7d8b083
+      internalID: 1943525670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_147
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 2373
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d362f43141cc24546aca0b74583abc97
+      internalID: 1242511046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_148
+      rect:
+        serializedVersion: 2
+        x: 2736
+        y: 2373
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b875ae051a3a469796886b603a0d597
+      internalID: 813930728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_149
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 2373
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec7e421d8529490caeeb0e01f6c2355
+      internalID: -273450998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_150
+      rect:
+        serializedVersion: 2
+        x: 4104
+        y: 2373
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35623e88241846ef802e984b746abf1
+      internalID: 2063269099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_151
+      rect:
+        serializedVersion: 2
+        x: 4788
+        y: 2373
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58172ecd80d9b4e03bc03dc858f8853b
+      internalID: -1591805621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_152
+      rect:
+        serializedVersion: 2
+        x: 5472
+        y: 2373
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f359c9bb6a0e44d6ab9740ad1f64b02
+      internalID: -1841593351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_153
+      rect:
+        serializedVersion: 2
+        x: 6156
+        y: 2373
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec05c0aaf5654f80a6ee80c4488d87e
+      internalID: -642536669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_154
+      rect:
+        serializedVersion: 2
+        x: 6840
+        y: 2373
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bea72f6ac0b24c41afac96ea385b4d8
+      internalID: -1643716467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_155
+      rect:
+        serializedVersion: 2
+        x: 7524
+        y: 2373
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35e059e08e22464483266c9ae770ac2
+      internalID: 682791964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_156
+      rect:
+        serializedVersion: 2
+        x: 8208
+        y: 2373
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c746d119aee2140fbb9b1a3582e72d9b
+      internalID: 807842425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_157
+      rect:
+        serializedVersion: 2
+        x: 8892
+        y: 2373
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd3c9f8c62774933b20e573f37feaab
+      internalID: 2093578109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_158
+      rect:
+        serializedVersion: 2
+        x: 9576
+        y: 2373
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23da11160ef434825b21f03baf013eac
+      internalID: 390847633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_159
+      rect:
+        serializedVersion: 2
+        x: 10260
+        y: 2373
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a1682da12ad48568d2b1025c6ed886
+      internalID: -1796373138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_160
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1582
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f7bfd5881a04fb7a696613878fb563
+      internalID: -1270190828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_161
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1582
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81411272a9b2b452993bfb3d97d9df98
+      internalID: -568330306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_162
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 1582
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55d61deed6704675809a41539be88a4
+      internalID: -623091318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_163
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 1582
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ea277b0303a4d9484509f799b39c3b
+      internalID: 160989161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_164
+      rect:
+        serializedVersion: 2
+        x: 2736
+        y: 1582
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8efedfbde7fc641b18762f5edc5ff3d9
+      internalID: 1973486078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_165
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 1582
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e567f66556b546bb8b93ccf4bcdd406
+      internalID: 1051314713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_166
+      rect:
+        serializedVersion: 2
+        x: 4104
+        y: 1582
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e3f910f370e44dabc002105f5f0e00
+      internalID: -437830495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_167
+      rect:
+        serializedVersion: 2
+        x: 4788
+        y: 1582
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2158f7bd526340298bb3055a3094948
+      internalID: 820952072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_168
+      rect:
+        serializedVersion: 2
+        x: 5472
+        y: 1582
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ebae6a9bed74d3d8297f12b810bb99
+      internalID: 1571335926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_169
+      rect:
+        serializedVersion: 2
+        x: 6156
+        y: 1582
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53f39e9884cd4fc7998e6ac31be23f1
+      internalID: 1079329918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_170
+      rect:
+        serializedVersion: 2
+        x: 6840
+        y: 1582
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59233b357776b4a39a3a1fd45a4120af
+      internalID: -433590018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_171
+      rect:
+        serializedVersion: 2
+        x: 7524
+        y: 1582
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11eabbb85549b4beca1d5344d74a3539
+      internalID: -2066855799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_172
+      rect:
+        serializedVersion: 2
+        x: 8208
+        y: 1582
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839f1bb481ee84bdaaf31c3ecc04298b
+      internalID: -1841289810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_173
+      rect:
+        serializedVersion: 2
+        x: 8892
+        y: 1582
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5ea5af2139a4af49b4d40e20395d25
+      internalID: 167407444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_174
+      rect:
+        serializedVersion: 2
+        x: 9576
+        y: 1582
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8228ce2c20d9940bba5c8818849b4658
+      internalID: -840357411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_175
+      rect:
+        serializedVersion: 2
+        x: 10260
+        y: 1582
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdde5ac42f8314120a5362e4b5439e3d
+      internalID: 1962433102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_176
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 791
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd9561c116394fada42d992f009e4fd
+      internalID: -1407864434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_177
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 791
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69fc0d2ca01d9488ba5589ce3b52cde1
+      internalID: 756533072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_178
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 791
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce61a8117383447869d8f6406ee7457c
+      internalID: 1725909219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_179
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 791
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65d100eb87684b83b68780b52101edd
+      internalID: -1686050338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_180
+      rect:
+        serializedVersion: 2
+        x: 2736
+        y: 791
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2914702236340d39352f9dd08af409
+      internalID: -584994099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_181
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 791
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1cc52826deea4de8937c39a1fa1aabb
+      internalID: 1039213075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_182
+      rect:
+        serializedVersion: 2
+        x: 4104
+        y: 791
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb13894e28f6847d9a10e8a23a3d7055
+      internalID: 2104642151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_183
+      rect:
+        serializedVersion: 2
+        x: 4788
+        y: 791
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f864fa651dc4e448aa79d63378c64e
+      internalID: -89552977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_184
+      rect:
+        serializedVersion: 2
+        x: 5472
+        y: 791
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37522d9de2c3a41cb8da331836ada044
+      internalID: 1954645045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_185
+      rect:
+        serializedVersion: 2
+        x: 6156
+        y: 791
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfde662cbf31e42d094256e2a816fb38
+      internalID: 59905301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_186
+      rect:
+        serializedVersion: 2
+        x: 6840
+        y: 791
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af407952888b431fa9fe3235d07f0b0
+      internalID: 207648855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_187
+      rect:
+        serializedVersion: 2
+        x: 7524
+        y: 791
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2ad7c1118fd4869ad5bc03f1f96915
+      internalID: 564798034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_188
+      rect:
+        serializedVersion: 2
+        x: 8208
+        y: 791
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ce3641c82da4a0c8c4a007649d7925
+      internalID: -1015743208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_189
+      rect:
+        serializedVersion: 2
+        x: 8892
+        y: 791
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f42d1ad083fa40f8b8f8f4f664a5fb3
+      internalID: -464983599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_190
+      rect:
+        serializedVersion: 2
+        x: 9576
+        y: 791
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b018dd258beb442c4bdee84c576c5855
+      internalID: 1630889094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_191
+      rect:
+        serializedVersion: 2
+        x: 10260
+        y: 791
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f1115a74b114409b156721a3285758
+      internalID: -498552696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_192
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb9e37e7fd9d24cdf9941e88b962a2ea
+      internalID: 91321491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_193
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 0
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9eca28a27d1643c18f92d3002bd9fec
+      internalID: 344974614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_194
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 0
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2baf5daba434280a00c02e996769b4
+      internalID: 51065747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_195
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 0
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f397eeca565a4e2786ce0858ec01b5a
+      internalID: -998088514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fixed_Block_196
+      rect:
+        serializedVersion: 2
+        x: 2736
+        y: 0
+        width: 684
+        height: 791
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf21463ccdaf34af08bb13d0791754b8
+      internalID: -886807860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 21f6ceeb247ee4d61ba95f1297e9f542
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Fixed_Block_0: -122634913
+      Fixed_Block_1: 583342274
+      Fixed_Block_10: 1320481456
+      Fixed_Block_100: -1695241853
+      Fixed_Block_101: 1266170272
+      Fixed_Block_102: 1293423550
+      Fixed_Block_103: 926280980
+      Fixed_Block_104: 17686728
+      Fixed_Block_105: -1887462979
+      Fixed_Block_106: 1034798142
+      Fixed_Block_107: -1915068953
+      Fixed_Block_108: -1438024746
+      Fixed_Block_109: 1761136311
+      Fixed_Block_11: 982886259
+      Fixed_Block_110: -1496925102
+      Fixed_Block_111: 531791247
+      Fixed_Block_112: 2010853227
+      Fixed_Block_113: 1004426212
+      Fixed_Block_114: 787127237
+      Fixed_Block_115: 1777632636
+      Fixed_Block_116: -2011039019
+      Fixed_Block_117: -1615622
+      Fixed_Block_118: -1522499155
+      Fixed_Block_119: -1003576372
+      Fixed_Block_12: -866241610
+      Fixed_Block_120: 153167823
+      Fixed_Block_121: 1198372166
+      Fixed_Block_122: 1385561748
+      Fixed_Block_123: -1002944702
+      Fixed_Block_124: 800927095
+      Fixed_Block_125: -1596160852
+      Fixed_Block_126: -25061353
+      Fixed_Block_127: 934159064
+      Fixed_Block_128: -2135040793
+      Fixed_Block_129: 541570429
+      Fixed_Block_13: -436897129
+      Fixed_Block_130: 803455262
+      Fixed_Block_131: 1448050826
+      Fixed_Block_132: 1764693703
+      Fixed_Block_133: -1228745706
+      Fixed_Block_134: -248092547
+      Fixed_Block_135: 1657758315
+      Fixed_Block_136: 2023880827
+      Fixed_Block_137: -929873304
+      Fixed_Block_138: 1232967437
+      Fixed_Block_139: 1169464462
+      Fixed_Block_14: 1869838717
+      Fixed_Block_140: 929987177
+      Fixed_Block_141: 1299486114
+      Fixed_Block_142: -1121960628
+      Fixed_Block_143: -1295370932
+      Fixed_Block_144: -580360253
+      Fixed_Block_145: 1356200014
+      Fixed_Block_146: 1943525670
+      Fixed_Block_147: 1242511046
+      Fixed_Block_148: 813930728
+      Fixed_Block_149: -273450998
+      Fixed_Block_15: 635550881
+      Fixed_Block_150: 2063269099
+      Fixed_Block_151: -1591805621
+      Fixed_Block_152: -1841593351
+      Fixed_Block_153: -642536669
+      Fixed_Block_154: -1643716467
+      Fixed_Block_155: 682791964
+      Fixed_Block_156: 807842425
+      Fixed_Block_157: 2093578109
+      Fixed_Block_158: 390847633
+      Fixed_Block_159: -1796373138
+      Fixed_Block_16: -353899817
+      Fixed_Block_160: -1270190828
+      Fixed_Block_161: -568330306
+      Fixed_Block_162: -623091318
+      Fixed_Block_163: 160989161
+      Fixed_Block_164: 1973486078
+      Fixed_Block_165: 1051314713
+      Fixed_Block_166: -437830495
+      Fixed_Block_167: 820952072
+      Fixed_Block_168: 1571335926
+      Fixed_Block_169: 1079329918
+      Fixed_Block_17: -2137957476
+      Fixed_Block_170: -433590018
+      Fixed_Block_171: -2066855799
+      Fixed_Block_172: -1841289810
+      Fixed_Block_173: 167407444
+      Fixed_Block_174: -840357411
+      Fixed_Block_175: 1962433102
+      Fixed_Block_176: -1407864434
+      Fixed_Block_177: 756533072
+      Fixed_Block_178: 1725909219
+      Fixed_Block_179: -1686050338
+      Fixed_Block_18: -534330316
+      Fixed_Block_180: -584994099
+      Fixed_Block_181: 1039213075
+      Fixed_Block_182: 2104642151
+      Fixed_Block_183: -89552977
+      Fixed_Block_184: 1954645045
+      Fixed_Block_185: 59905301
+      Fixed_Block_186: 207648855
+      Fixed_Block_187: 564798034
+      Fixed_Block_188: -1015743208
+      Fixed_Block_189: -464983599
+      Fixed_Block_19: -150261643
+      Fixed_Block_190: 1630889094
+      Fixed_Block_191: -498552696
+      Fixed_Block_192: 91321491
+      Fixed_Block_193: 344974614
+      Fixed_Block_194: 51065747
+      Fixed_Block_195: -998088514
+      Fixed_Block_196: -886807860
+      Fixed_Block_197: 87562375
+      Fixed_Block_198: -1407741683
+      Fixed_Block_199: 55662624
+      Fixed_Block_2: 1965519412
+      Fixed_Block_20: -872294589
+      Fixed_Block_200: 2113587132
+      Fixed_Block_201: -108069674
+      Fixed_Block_202: -339025410
+      Fixed_Block_203: -615774278
+      Fixed_Block_204: 2059437406
+      Fixed_Block_205: 248120432
+      Fixed_Block_206: 1041568293
+      Fixed_Block_207: -908120547
+      Fixed_Block_21: 996632453
+      Fixed_Block_22: 1683870257
+      Fixed_Block_23: -1112530930
+      Fixed_Block_24: 757346216
+      Fixed_Block_25: 1556091782
+      Fixed_Block_26: 35370043
+      Fixed_Block_27: -677807524
+      Fixed_Block_28: 511760259
+      Fixed_Block_29: 1783985253
+      Fixed_Block_3: -1110477848
+      Fixed_Block_30: -738904810
+      Fixed_Block_31: -931776596
+      Fixed_Block_32: 421071408
+      Fixed_Block_33: -1287210505
+      Fixed_Block_34: 925722891
+      Fixed_Block_35: 2029820671
+      Fixed_Block_36: -1234171535
+      Fixed_Block_37: 508241536
+      Fixed_Block_38: -50935692
+      Fixed_Block_39: -1029653231
+      Fixed_Block_4: -673972910
+      Fixed_Block_40: 191309462
+      Fixed_Block_41: 1719898689
+      Fixed_Block_42: 818103129
+      Fixed_Block_43: 1460599718
+      Fixed_Block_44: -2025730897
+      Fixed_Block_45: 1079237743
+      Fixed_Block_46: -352748491
+      Fixed_Block_47: -1190955524
+      Fixed_Block_48: -1693795213
+      Fixed_Block_49: 1324390814
+      Fixed_Block_5: 1635792097
+      Fixed_Block_50: -1157445297
+      Fixed_Block_51: -1681434262
+      Fixed_Block_52: 573440940
+      Fixed_Block_53: -1155350558
+      Fixed_Block_54: 2036549627
+      Fixed_Block_55: -349211364
+      Fixed_Block_56: 1222108233
+      Fixed_Block_57: 179752408
+      Fixed_Block_58: -1074212667
+      Fixed_Block_59: -2068947708
+      Fixed_Block_6: -1705109534
+      Fixed_Block_60: 1945212352
+      Fixed_Block_61: -1629131423
+      Fixed_Block_62: -842680736
+      Fixed_Block_63: -1401316919
+      Fixed_Block_64: 59113265
+      Fixed_Block_65: -665381296
+      Fixed_Block_66: 624078729
+      Fixed_Block_67: 1035045988
+      Fixed_Block_68: -45676891
+      Fixed_Block_69: -477983153
+      Fixed_Block_7: 2090515112
+      Fixed_Block_70: 1241042803
+      Fixed_Block_71: 1252535647
+      Fixed_Block_72: 1531926857
+      Fixed_Block_73: -19928938
+      Fixed_Block_74: 1980886126
+      Fixed_Block_75: -1676913215
+      Fixed_Block_76: -1136742155
+      Fixed_Block_77: -107194120
+      Fixed_Block_78: -655258204
+      Fixed_Block_79: -1193997030
+      Fixed_Block_8: -192395320
+      Fixed_Block_80: 321540000
+      Fixed_Block_81: 1587740205
+      Fixed_Block_82: 1800627284
+      Fixed_Block_83: 1134858169
+      Fixed_Block_84: -1807414794
+      Fixed_Block_85: -1950902182
+      Fixed_Block_86: -817741502
+      Fixed_Block_87: 1942220344
+      Fixed_Block_88: -954777684
+      Fixed_Block_89: -879865440
+      Fixed_Block_9: -1741043079
+      Fixed_Block_90: -516388270
+      Fixed_Block_91: -2053449097
+      Fixed_Block_92: 1828897608
+      Fixed_Block_93: 1276294019
+      Fixed_Block_94: -30391241
+      Fixed_Block_95: 1962734486
+      Fixed_Block_96: -1327649785
+      Fixed_Block_97: 580313572
+      Fixed_Block_98: 25456857
+      Fixed_Block_99: -164529495
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

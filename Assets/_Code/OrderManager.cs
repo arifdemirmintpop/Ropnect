@@ -52,31 +52,6 @@ public class OrderManager : MonoSingleton<OrderManager>
         currentOrder = (currentOrder + 1) % orders.Length;
         CreateOrder();
 
-        // after creating new order, attempt to complete with existing reels
-        foreach (var r in reels)
-        {
-            TryToCompleteOrder(r);
-        }
     }
 
-    public void TryToCompleteOrder(ReelController reel)
-    {
-        // naive implementation: check if any order matches reel properties
-        // For demonstration we remove reel if its level and color match current order
-        if (orders == null || orders.Length == 0) return;
-        var data = orders[currentOrder];
-        if (reel.level == data.level && reel.color == data.color)
-        {
-            // consider this reel completed
-            reels.Remove(reel);
-            currentOrder = (currentOrder + 1) % orders.Length;
-            CreateOrder();
-
-            // after creating new order, attempt to complete with existing reels
-            foreach (var r in reels)
-            {
-                TryToCompleteOrder(r);
-            }
-        }
-    }
 }

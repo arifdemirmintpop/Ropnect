@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045764ca1367c485f9a20b0cb9e871f0, type: 3}
+  m_Name: TipackExportData
+  m_EditorClassIdentifier: 
+  exportList:
+  - {fileID: 102900000, guid: 91156b6c50c1c421d9618f08ce4cef97, type: 3}
+  - {fileID: 102900000, guid: 8a0d36665e7c247228889b60f0b533af, type: 3}
+  - {fileID: 4900000, guid: 08594eaaf05f1497c8806537431a18c1, type: 3}

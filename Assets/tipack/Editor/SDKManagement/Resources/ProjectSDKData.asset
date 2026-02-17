@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c3ee6d2422f43d9b0053bf65efe10f, type: 3}
+  m_Name: ProjectSDKData
+  m_EditorClassIdentifier: 
+  elephantGameKit: {fileID: 11400000, guid: ed96f5a06f6224d66877e56844c54cf5, type: 2}
+  externalDependency: {fileID: 11400000, guid: f70ecab4e0f654dc7931a1a9fdb9f851, type: 2}
+  facebook: {fileID: 11400000, guid: 97d98ba03217b4172b04944d9f440707, type: 2}
+  gameAnalytics: {fileID: 11400000, guid: 9476642c7018f4909b894743728e1b97, type: 2}
+  elephant: {fileID: 11400000, guid: ee8f55d63c93b4ee4b553de4a5e15a48, type: 2}
+  tibug: {fileID: 11400000, guid: 4fa673927a7884a78b832ccb6918c7cd, type: 2}

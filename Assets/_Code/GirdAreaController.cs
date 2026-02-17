@@ -195,23 +195,43 @@ public class GirdAreaController : MonoBehaviour
             return true;
         }
 
-        // Dijkstra-like search minimizing number of turns (direction changes). Distance is ignored.
-        // State includes current direction to count turns properly.
-        int dirs = neighborOffsets.Length; // should be 4
+        // First: try original constrained search (no collisions allowed, max 3 turns)
+        if (PerformTurnMinimizingSearch(sx, sz, tx, tz, allowCollisions: false, maxTurnsAllowed: 4, out path))
+            return true;
 
-        // bestTurns[x,z,dir] = minimal turns to reach (x,z) when arriving with direction 'dir'
+        // If not found, try relaxed searches per requirements:
+        // 1) If there is a path with <4 turns but collides with objects => return that path but false.
+        if (PerformTurnMinimizingSearch(sx, sz, tx, tz, allowCollisions: true, maxTurnsAllowed: 4, out path))
+            return false;
+
+        // 2) If there is a path with >=4 turns but without collisions => return that path but false.
+        if (PerformTurnMinimizingSearch(sx, sz, tx, tz, allowCollisions: false, maxTurnsAllowed: -1, out path))
+            return false;
+
+        // Otherwise no path available under these relaxations
+        return false;
+    }
+
+    // Helper search: turn-minimizing Dijkstra-like search. Configurable to allow stepping into occupied cells and to set a maximum allowed turns (-1 for unlimited).
+    bool PerformTurnMinimizingSearch(int sx, int sz, int tx, int tz, bool allowCollisions, int maxTurnsAllowed, out Vector2[] path)
+    {
+        path = null;
+        int countX = gridArray?.Length ?? 0;
+        int countZ = (countX > 0) ? gridArray[0].Length : 0;
+        if (countX == 0 || countZ == 0) return false;
+
+        int dirs = neighborOffsets.Length; // 4
         int[,,] bestTurns = new int[countX, countZ, dirs];
-        for (int x = 0; x < countX; x++) for (int z = 0; z < countZ; z++) for (int d = 0; d < dirs; d++) bestTurns[x, z, d] = int.MaxValue;
+        for (int x = 0; x < countX; x++)
+            for (int z = 0; z < countZ; z++)
+                for (int d = 0; d < dirs; d++)
+                    bestTurns[x, z, d] = int.MaxValue;
 
         var open = new List<TurnNode>();
-
-        // start node
-        TurnNode startNode = new TurnNode(sx, sz, -1, 0, 0, null);
-        open.Add(startNode);
+        open.Add(new TurnNode(sx, sz, -1, 0, 0, null));
 
         while (open.Count > 0)
         {
-            // pick node with minimal turns, tie-breaker minimal steps
             TurnNode current = open[0];
             for (int i = 1; i < open.Count; i++)
             {
@@ -220,7 +240,6 @@ public class GirdAreaController : MonoBehaviour
             }
             open.Remove(current);
 
-            // expand neighbors
             foreach (var nOff in neighborOffsets)
             {
                 int ndir = GetDirectionIndex(nOff.x, nOff.z);
@@ -228,25 +247,34 @@ public class GirdAreaController : MonoBehaviour
                 int nz = current.z + nOff.z;
                 if (nx < 0 || nz < 0 || nx >= countX || nz >= countZ) continue;
 
-                // walkable if empty OR it's the target OR it's the start
-                bool walkable = (gridArray[nx][nz] == null || gridArray[nx][nz].reel == null) || (nx == tx && nz == tz) || (nx == sx && nz == sz);
+                // walkable depends on allowCollisions flag
+                bool walkable;
+                if (allowCollisions)
+                {
+                    // allow walking into any cell (still within bounds). Start and target are always allowed.
+                    walkable = true;
+                }
+                else
+                {
+                    walkable = (gridArray[nx][nz] == null || gridArray[nx][nz].reel == null) || (nx == tx && nz == tz) || (nx == sx && nz == sz);
+                }
+
                 if (!walkable) continue;
 
                 int newTurns = current.dir == -1 ? 0 : (current.dir == ndir ? current.turns : current.turns + 1);
-                if (newTurns >= 4) continue; // reject paths with 4 or more turns
+
+                // apply maxTurnsAllowed if set
+                if (maxTurnsAllowed >= 0 && newTurns >= maxTurnsAllowed) continue;
 
                 int newSteps = current.steps + 1;
 
-                // if this state improves bestTurns, push
                 if (newTurns < bestTurns[nx, nz, ndir])
                 {
                     bestTurns[nx, nz, ndir] = newTurns;
                     var node = new TurnNode(nx, nz, ndir, newTurns, newSteps, current);
 
-                    // if reached target, reconstruct path
                     if (nx == tx && nz == tz)
                     {
-                        // build path by walking parents (includes start node with dir=-1)
                         var rev = new List<Vector2>();
                         TurnNode p = node;
                         while (p != null)
