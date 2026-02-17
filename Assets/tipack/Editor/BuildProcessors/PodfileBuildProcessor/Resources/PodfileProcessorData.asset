@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21de4561f6908483aa99a429b7015f68, type: 3}
   m_Name: PodfileProcessorData
   m_EditorClassIdentifier: 
-  processorEnabled: 0
+  processorEnabled: 1
   addStaticLinkage: 1
   autoRunPodInstall: 1

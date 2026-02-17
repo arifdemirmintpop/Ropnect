@@ -269,8 +269,8 @@ MonoBehaviour:
     IsMusicEnable: 1
   UserEngagementDatabase:
     IsUpdatedUser: 0
-    InstallTimestamp: 1754045538
-    TotalPlaytime: 4
+    InstallTimestamp: 0
+    TotalPlaytime: 0
   VersionDatabase:
     Version: 0.1
-    BuildNumber: 
+    BuildNumber: 37

@@ -6,10 +6,10 @@ using UnityEditor;
 
 public class GirdAreaController : MonoBehaviour
 {
-    [Tooltip("Grid boyutu (X = sütun sayýsý, Y = satýr sayýsý)")]
+    [Tooltip("Grid boyutu (X = sï¿½tun sayï¿½sï¿½, Y = satï¿½r sayï¿½sï¿½)")]
     public Vector2 size = new Vector2(1, 1);
 
-    [Tooltip("Hücreler arasý offset (X -> dünya X, Y -> dünya Z)")]
+    [Tooltip("Hï¿½creler arasï¿½ offset (X -> dï¿½nya X, Y -> dï¿½nya Z)")]
     public Vector2 offset = Vector2.one;
 
     public GameObject prefab;
@@ -18,13 +18,13 @@ public class GirdAreaController : MonoBehaviour
     [HideInInspector]
     public GridAreaCell[][] gridArray;
 
-    // Context menüden çalýþtýrýlabilir: Editor'de seçilen prefabý size ve offset'e göre X/Z eksenlerinde çoðaltýr
+    // Context menï¿½den ï¿½alï¿½ï¿½tï¿½rï¿½labilir: Editor'de seï¿½ilen prefabï¿½ size ve offset'e gï¿½re X/Z eksenlerinde ï¿½oï¿½altï¿½r
     [ContextMenu("Create Grid Area")]
     public void CreateGridArea()
     {
         if (prefab == null)
         {
-            Debug.LogWarning("GirdAreaController: Prefab atanmadý.");
+            Debug.LogWarning("GirdAreaController: Prefab atanmadï¿½.");
             return;
         }
 
@@ -33,16 +33,16 @@ public class GirdAreaController : MonoBehaviour
 
         if (countX == 0 || countZ == 0)
         {
-            Debug.LogWarning("GirdAreaController: size X veya Y sýfýr veya negatif. Doðru bir boyut girin.");
+            Debug.LogWarning("GirdAreaController: size X veya Y sï¿½fï¿½r veya negatif. Doï¿½ru bir boyut girin.");
             return;
         }
 
-        // Parent nesne adý ve hazýrlanmasý
+        // Parent nesne adï¿½ ve hazï¿½rlanmasï¿½
         string parentName = $"GridArea_{gameObject.name}";
         Transform parentTransform = transform.Find(parentName);
 
 #if UNITY_EDITOR
-        // Eðer önceden oluþturulmuþ parent varsa sil (Undo destekli)
+        // Eï¿½er ï¿½nceden oluï¿½turulmuï¿½ parent varsa sil (Undo destekli)
         if (parentTransform != null)
         {
             Undo.DestroyObjectImmediate(parentTransform.gameObject);
@@ -63,31 +63,31 @@ public class GirdAreaController : MonoBehaviour
         parentTransform = parentGO.transform;
 #endif
 
-        // Parent'ý bu GameObject'in çocuðý yap ve yerini sýfýrla
+        // Parent'ï¿½ bu GameObject'in ï¿½ocuï¿½ï¿½ yap ve yerini sï¿½fï¿½rla
         parentTransform.SetParent(transform, false);
         parentTransform.localPosition = Vector3.zero;
         parentTransform.localRotation = Quaternion.identity;
         parentTransform.localScale = Vector3.one;
 
-        // Hesaplama: X ve Z eksenlerinde ortalamak için baþlangýç ofsetlerini hesapla
-        float totalWidth = (countX - 1) * offset.x; // toplam geniþlik hücreler arasý uzaklýkla
+        // Hesaplama: X ve Z eksenlerinde ortalamak iï¿½in baï¿½langï¿½ï¿½ ofsetlerini hesapla
+        float totalWidth = (countX - 1) * offset.x; // toplam geniï¿½lik hï¿½creler arasï¿½ uzaklï¿½kla
         float startX = -totalWidth * 0.5f;
         float totalDepth = (countZ - 1) * offset.y; // toplam derinlik (Z)
         float startZ = -totalDepth * 0.5f;
 
-        // Oluþturma döngüsü (X -> world X, Z -> world Z)
+        // Oluï¿½turma dï¿½ngï¿½sï¿½ (X -> world X, Z -> world Z)
         for (int x = 0; x < countX; x++)
         {
             for (int z = 0; z < countZ; z++)
             {
-                // Lokal pozisyon parent içinde, X ve Z eksenlerinde ortalanmýþ
+                // Lokal pozisyon parent iï¿½inde, X ve Z eksenlerinde ortalanmï¿½ï¿½
                 Vector3 localPos = new Vector3(startX + x * offset.x, 0f, startZ + z * offset.y);
 
                 // Instantiate GridAreaCell prefab (expected to contain GridAreaCell component)
                 GameObject instance = Instantiate(prefab.gameObject, parentTransform);
                 instance.name = $"Cell_{x}_{z}";
 
-                // Transform'u prefabýn transformuna göre ayarla (pozisyon, rotasyon, ölçek)
+                // Transform'u prefabï¿½n transformuna gï¿½re ayarla (pozisyon, rotasyon, ï¿½lï¿½ek)
                 instance.transform.localPosition = localPos;
                 instance.transform.localRotation = prefab.transform.localRotation;
                 instance.transform.localScale = prefab.transform.localScale;
@@ -107,18 +107,18 @@ public class GirdAreaController : MonoBehaviour
                 }
 
 #if UNITY_EDITOR
-                // Undo desteði ile oluþturmayý kaydet
+                // Undo desteï¿½i ile oluï¿½turmayï¿½ kaydet
                 Undo.RegisterCreatedObjectUndo(instance, "Create Grid Cell");
 #endif
             }
         }
 
 #if UNITY_EDITOR
-        // Seçimi parent nesneye geçir (kullanýcýya görünürlük için)
+        // Seï¿½imi parent nesneye geï¿½ir (kullanï¿½cï¿½ya gï¿½rï¿½nï¿½rlï¿½k iï¿½in)
         Selection.activeGameObject = parentTransform.gameObject;
 #endif
 
-        Debug.Log($"GirdAreaController: {countX * countZ} hücre oluþturuldu ({countX}x{countZ}).");
+        Debug.Log($"GirdAreaController: {countX * countZ} hï¿½cre oluï¿½turuldu ({countX}x{countZ}).");
 
         // Build grid array after creation
         BuildGridArray();
@@ -159,202 +159,374 @@ public class GirdAreaController : MonoBehaviour
                 // attempt to add GridAreaCell to this transform so gridArray always filled
                 cell = child.gameObject.AddComponent<GridAreaCell>();
                 cell.SetCoordinate(x, z);
-                cell.reel = child.GetComponent<ReelController>();
+                // IMPORTANT: do NOT override occupancy here. Leave `cell.reel` as-is (default null)
+                // Occupancy should be managed elsewhere and not inferred from components on the cell.
             }
 
             gridArray[x][z] = cell; // can be null if no GridAreaCell on the cell
         }
     }
 
-    // Try to find a path from 'from' to 'to' using A* over the grid indices.
-    // Movement is allowed only through empty cells (gridArray[x][z] == null or gridArray[x][z].reel == null).
-    // The start and end cells are allowed to be occupied (they are considered walkable).
-    // from/to are expected to contain integer-like coordinates (x,z). Returns true if a path found and outputs the path as array of Vector2 (grid indices).
-    // Updated: Instead of shortest path, choose path with minimum number of turns (direction changes). Distance is ignored.
-    public bool TryToReach(Vector2 from, Vector2 to, out Vector2[] path)
+    // Optional validator to reconcile occupancy references with actual scene children
+    void ValidateGridOccupancy()
     {
-        BuildGridArray(); // ensure up-to-date
+        string parentName = $"GridArea_{gameObject.name}";
+        Transform parentTransform = transform.Find(parentName);
+        if (parentTransform == null || gridArray == null) return;
 
-        int countX = gridArray?.Length ?? 0;
-        int countZ = (countX > 0) ? gridArray[0].Length : 0;
+        foreach (Transform child in parentTransform)
+        {
+            if (!child.name.StartsWith("Cell_")) continue;
+            var parts = child.name.Split('_');
+            if (parts.Length < 3) continue;
+            if (!int.TryParse(parts[1], out int x)) continue;
+            if (!int.TryParse(parts[2], out int z)) continue;
+            if (x < 0 || z < 0 || x >= gridArray.Length || gridArray[x] == null || z >= gridArray[x].Length) continue;
+
+            var cell = gridArray[x][z];
+            if (cell == null) continue;
+
+            // find an active ReelController child under this cell
+            ReelController found = null;
+            for (int i = 0; i < child.childCount; i++)
+            {
+                var rc = child.GetChild(i).GetComponent<ReelController>();
+                if (rc != null && rc.gameObject.activeInHierarchy)
+                {
+                    found = rc;
+                    break;
+                }
+            }
+
+            // reconcile
+            if (cell.reel != found)
+            {
+                cell.reel = found; // updates collider via setter
+            }
+        }
+    }
+
+    // Try to reach 'to' from 'from' using A* with constraints:
+    // - Max 3 turns
+    // - Cannot pass through occupied cells (except start and end)
+    // Returns shortest path (Manhattan) if exists
+    public bool TryToReach(Vector2 from, Vector2 to, out Vector2[] path, out PathResult result, out GameObject blockingObject)
+    {
+        blockingObject = null;
         path = null;
-        if (countX == 0 || countZ == 0) return false;
+        result = PathResult.NoOpenPath;
 
+        int width = Mathf.RoundToInt(size.x);
+        int height = Mathf.RoundToInt(size.y);
+
+        // validate bounds
         int sx = Mathf.RoundToInt(from.x);
         int sz = Mathf.RoundToInt(from.y);
         int tx = Mathf.RoundToInt(to.x);
         int tz = Mathf.RoundToInt(to.y);
 
-        if (sx < 0 || sx >= countX || sz < 0 || sz >= countZ) return false;
-        if (tx < 0 || tx >= countX || tz < 0 || tz >= countZ) return false;
+        if (width <= 0 || height <= 0) return false;
+        if (sx < 0 || sz < 0 || sx >= width || sz >= height) return false;
+        if (tx < 0 || tz < 0 || tx >= width || tz >= height) return false;
 
-        // if same cell
-        if (sx == tx && sz == tz)
+        // ensure grid built
+        if (gridArray == null || gridArray.Length != width || (width > 0 && (gridArray[0] == null || gridArray[0].Length != height)))
         {
-            path = new Vector2[] { new Vector2(sx, sz) };
+            BuildGridArray();
+        }
+        // reconcile occupancy to avoid stale blockers
+        ValidateGridOccupancy();
+
+        // helper: traversable considering occupancy and active state; allow endpoints to be occupied
+        // occupancy considers only active reels to reduce false positives
+        // also returns a reason/object for diagnostics
+        bool IsTraversable(int x, int z, out string reason, out GameObject reasonObject)
+        {
+            reason = null;
+            reasonObject = null;
+            if (x < 0 || z < 0 || x >= width || z >= height)
+            {
+                reason = "OutOfBounds";
+                return false;
+            }
+            var cell = gridArray != null && gridArray[x] != null ? gridArray[x][z] : null;
+            if (cell == null)
+            {
+                reason = "MissingCell";
+                return false;
+            }
+            if (!cell.gameObject.activeInHierarchy)
+            {
+                reason = "InactiveCell";
+                reasonObject = cell.gameObject;
+                return false;
+            }
+            bool isEndpoint = (x == sx && z == sz) || (x == tx && z == tz);
+            if (!isEndpoint && cell.reel != null && cell.reel.gameObject.activeInHierarchy)
+            {
+                reason = "OccupiedByReel";
+                reasonObject = cell.reel != null ? cell.reel.gameObject : cell.gameObject;
+                return false;
+            }
             return true;
         }
 
-        // First: try original constrained search (no collisions allowed, max 3 turns)
-        if (PerformTurnMinimizingSearch(sx, sz, tx, tz, allowCollisions: false, maxTurnsAllowed: 4, out path))
-            return true;
-
-        // If not found, try relaxed searches per requirements:
-        // 1) If there is a path with <4 turns but collides with objects => return that path but false.
-        if (PerformTurnMinimizingSearch(sx, sz, tx, tz, allowCollisions: true, maxTurnsAllowed: 4, out path))
-            return false;
-
-        // 2) If there is a path with >=4 turns but without collisions => return that path but false.
-        if (PerformTurnMinimizingSearch(sx, sz, tx, tz, allowCollisions: false, maxTurnsAllowed: -1, out path))
-            return false;
-
-        // Otherwise no path available under these relaxations
-        return false;
-    }
-
-    // Helper search: turn-minimizing Dijkstra-like search. Configurable to allow stepping into occupied cells and to set a maximum allowed turns (-1 for unlimited).
-    bool PerformTurnMinimizingSearch(int sx, int sz, int tx, int tz, bool allowCollisions, int maxTurnsAllowed, out Vector2[] path)
-    {
-        path = null;
-        int countX = gridArray?.Length ?? 0;
-        int countZ = (countX > 0) ? gridArray[0].Length : 0;
-        if (countX == 0 || countZ == 0) return false;
-
-        int dirs = neighborOffsets.Length; // 4
-        int[,,] bestTurns = new int[countX, countZ, dirs];
-        for (int x = 0; x < countX; x++)
-            for (int z = 0; z < countZ; z++)
-                for (int d = 0; d < dirs; d++)
-                    bestTurns[x, z, d] = int.MaxValue;
-
-        var open = new List<TurnNode>();
-        open.Add(new TurnNode(sx, sz, -1, 0, 0, null));
-
-        while (open.Count > 0)
+        string startReason, endReason; GameObject startObj, endObj;
+        bool startOk = IsTraversable(sx, sz, out startReason, out startObj);
+        bool endOk = IsTraversable(tx, tz, out endReason, out endObj);
+        if (!startOk || !endOk)
         {
-            TurnNode current = open[0];
-            for (int i = 1; i < open.Count; i++)
+            // endpoints invalid (e.g., outside or missing cells)
+            result = PathResult.NoOpenPath;
+            blockingObject = !startOk ? (startObj != null ? startObj : this.gameObject) : (!endOk ? (endObj != null ? endObj : this.gameObject) : this.gameObject);
+            Debug.Log($"GirdAreaController: NoOpenPath (endpoints invalid). StartOk={startOk}({startReason}), EndOk={endOk}({endReason}), from=({sx},{sz}) to=({tx},{tz})", blockingObject);
+            return false;
+        }
+
+        // diagnostics counters
+        int prunedOutOfBounds = 0;
+        int prunedMissingCell = 0;
+        int prunedInactive = 0;
+        int prunedOccupied = 0;
+        int prunedTurnLimit = 0;
+        GameObject firstBlockedObject = null;
+
+        // Axis-aligned fast path: if straight line cells are traversable, return it
+        if (sx == tx || sz == tz)
+        {
+            System.Collections.Generic.List<Vector2> axisPath = new System.Collections.Generic.List<Vector2>();
+            axisPath.Add(new Vector2(sx, sz));
+            bool clear = true;
+            if (sx == tx)
             {
-                var n = open[i];
-                if (n.turns < current.turns || (n.turns == current.turns && n.steps < current.steps)) current = n;
-            }
-            open.Remove(current);
-
-            foreach (var nOff in neighborOffsets)
-            {
-                int ndir = GetDirectionIndex(nOff.x, nOff.z);
-                int nx = current.x + nOff.x;
-                int nz = current.z + nOff.z;
-                if (nx < 0 || nz < 0 || nx >= countX || nz >= countZ) continue;
-
-                // walkable depends on allowCollisions flag
-                bool walkable;
-                if (allowCollisions)
+                int step = (tz > sz) ? 1 : -1;
+                for (int zz = sz + step; zz != tz; zz += step)
                 {
-                    // allow walking into any cell (still within bounds). Start and target are always allowed.
-                    walkable = true;
-                }
-                else
-                {
-                    walkable = (gridArray[nx][nz] == null || gridArray[nx][nz].reel == null) || (nx == tx && nz == tz) || (nx == sx && nz == sz);
-                }
-
-                if (!walkable) continue;
-
-                int newTurns = current.dir == -1 ? 0 : (current.dir == ndir ? current.turns : current.turns + 1);
-
-                // apply maxTurnsAllowed if set
-                if (maxTurnsAllowed >= 0 && newTurns >= maxTurnsAllowed) continue;
-
-                int newSteps = current.steps + 1;
-
-                if (newTurns < bestTurns[nx, nz, ndir])
-                {
-                    bestTurns[nx, nz, ndir] = newTurns;
-                    var node = new TurnNode(nx, nz, ndir, newTurns, newSteps, current);
-
-                    if (nx == tx && nz == tz)
+                    string rsn; GameObject robj;
+                    if (!IsTraversable(sx, zz, out rsn, out robj))
                     {
-                        var rev = new List<Vector2>();
-                        TurnNode p = node;
-                        while (p != null)
-                        {
-                            rev.Add(new Vector2(p.x, p.z));
-                            p = p.parent;
-                        }
-                        rev.Reverse();
-                        path = rev.ToArray();
-                        return true;
+                        clear = false;
+                        break;
+                    }
+                    axisPath.Add(new Vector2(sx, zz));
+                }
+            }
+            else
+            {
+                int step = (tx > sx) ? 1 : -1;
+                for (int xx = sx + step; xx != tx; xx += step)
+                {
+                    string rsn; GameObject robj;
+                    if (!IsTraversable(xx, sz, out rsn, out robj))
+                    {
+                        clear = false;
+                        break;
+                    }
+                    axisPath.Add(new Vector2(xx, sz));
+                }
+            }
+            axisPath.Add(new Vector2(tx, tz));
+            if (clear)
+            {
+                path = axisPath.ToArray();
+                result = PathResult.Success;
+                return true;
+            }
+        }
+
+        // A* with turn constraint
+        Vector2[] FindPathWithTurnLimit(int maxTurns)
+        {
+            // directions: 0: +X, 1: -X, 2: +Z, 3: -Z
+            int[] dx = new int[] { 1, -1, 0, 0 };
+            int[] dz = new int[] { 0, 0, 1, -1 };
+
+            // Node structure
+            System.Collections.Generic.List<Node> open = new System.Collections.Generic.List<Node>();
+            System.Collections.Generic.Dictionary<string, int> bestG = new System.Collections.Generic.Dictionary<string, int>();
+
+            // Seed start with 4 directional states so the first step can go any way
+            for (int sd = 0; sd < 4; sd++)
+            {
+                Node start = new Node
+                {
+                    x = sx,
+                    z = sz,
+                    g = 0,
+                    h = Mathf.Abs(tx - sx) + Mathf.Abs(tz - sz),
+                    dir = sd,
+                    turns = 0,
+                    parent = null
+                };
+                open.Add(start);
+                bestG[Key(start.x, start.z, start.dir, start.turns)] = 0;
+            }
+
+            while (open.Count > 0)
+            {
+                // pick node with lowest f = g + h; tie-break lower h
+                int bestIndex = 0;
+                int bestF = open[0].g + open[0].h;
+                int bestH = open[0].h;
+                for (int i = 1; i < open.Count; i++)
+                {
+                    int f = open[i].g + open[i].h;
+                    if (f < bestF || (f == bestF && open[i].h < bestH))
+                    {
+                        bestF = f;
+                        bestH = open[i].h;
+                        bestIndex = i;
+                    }
+                }
+
+                Node current = open[bestIndex];
+                open.RemoveAt(bestIndex);
+
+                // reached target
+                if (current.x == tx && current.z == tz)
+                {
+                    return Reconstruct(current);
+                }
+
+                // explore neighbors
+                for (int d = 0; d < 4; d++)
+                {
+                    int nx = current.x + dx[d];
+                    int nz = current.z + dz[d];
+                    string rsn; GameObject robj;
+                    if (!IsTraversable(nx, nz, out rsn, out robj))
+                    {
+                        if (rsn == "OutOfBounds") prunedOutOfBounds++;
+                        else if (rsn == "MissingCell") prunedMissingCell++;
+                        else if (rsn == "InactiveCell") prunedInactive++;
+                        else if (rsn == "OccupiedByReel") prunedOccupied++;
+                        if (firstBlockedObject == null && robj != null) firstBlockedObject = robj;
+                        continue;
                     }
 
-                    open.Add(node);
+                    int newTurns = current.turns;
+                    if (current.dir != d) newTurns++;
+                    if (newTurns > maxTurns)
+                    {
+                        prunedTurnLimit++;
+                        continue;
+                    }
+
+                    int ng = current.g + 1;
+                    int nh = Mathf.Abs(tx - nx) + Mathf.Abs(tz - nz);
+
+                    string k = Key(nx, nz, d, newTurns);
+                    if (bestG.TryGetValue(k, out int prevG))
+                    {
+                        if (ng >= prevG) continue;
+                    }
+
+                    bestG[k] = ng;
+                    Node next = new Node
+                    {
+                        x = nx,
+                        z = nz,
+                        g = ng,
+                        h = nh,
+                        dir = d,
+                        turns = newTurns,
+                        parent = current
+                    };
+                    open.Add(next);
                 }
             }
+
+            return null;
         }
 
-        return false;
-    }
+        // First attempt with turn cap = 3
+        var capped = FindPathWithTurnLimit(3);
+        if (capped != null)
+        {
+            path = capped;
+            result = PathResult.Success;
+            return true;
+        }
 
-    // helper to map offset to direction index
-    static int GetDirectionIndex(int dx, int dz)
-    {
-        // neighborOffsets: { (1,0), (-1,0), (0,1), (0,-1) }
-        if (dx == 1 && dz == 0) return 0;
-        if (dx == -1 && dz == 0) return 1;
-        if (dx == 0 && dz == 1) return 2;
-        return 3;
+        // Check if a path exists with a generous finite turn cap (diagnostic)
+        // Use a bound tied to grid size to prevent infinite state space.
+        int generousTurnCap = Mathf.Max(width * height, 8);
+        var unlimited = FindPathWithTurnLimit(generousTurnCap);
+        if (unlimited != null)
+        {
+            // signal too many turns required
+            result = PathResult.TooMuchTurn;
+            path = unlimited; // optional: can return alternative path for visualization
+            return false;
+        }
+
+        // no open path at all
+        result = PathResult.NoOpenPath;
+        path = null;
+        // If axis-aligned, emit straight-line cell diagnostics to pinpoint blockers
+        if (sx == tx || sz == tz)
+        {
+            System.Text.StringBuilder sb = new System.Text.StringBuilder();
+            sb.Append("StraightLineCheck: ");
+            GameObject straightCtx = null;
+            if (sx == tx)
+            {
+                int step = (tz > sz) ? 1 : -1;
+                for (int zz = sz + step; zz != tz; zz += step)
+                {
+                    string rsn; GameObject robj;
+                    bool ok = IsTraversable(sx, zz, out rsn, out robj);
+                    sb.Append($"({sx},{zz})->{(ok ? "OK" : rsn)} ");
+                    if (!ok && straightCtx == null && robj != null) straightCtx = robj;
+                }
+            }
+            else // sz == tz
+            {
+                int step = (tx > sx) ? 1 : -1;
+                for (int xx = sx + step; xx != tx; xx += step)
+                {
+                    string rsn; GameObject robj;
+                    bool ok = IsTraversable(xx, sz, out rsn, out robj);
+                    sb.Append($"({xx},{sz})->{(ok ? "OK" : rsn)} ");
+                    if (!ok && straightCtx == null && robj != null) straightCtx = robj;
+                }
+            }
+            Debug.Log(sb.ToString(), straightCtx != null ? straightCtx : this.gameObject);
+        }
+
+        Debug.Log($"GirdAreaController: NoOpenPath (no route found). from=({sx},{sz}) to=({tx},{tz}), grid={width}x{height}, turnCap=3, diagnosticCap={generousTurnCap}. Pruned -> OutOfBounds:{prunedOutOfBounds}, MissingCell:{prunedMissingCell}, Inactive:{prunedInactive}, Occupied:{prunedOccupied}, TurnLimit:{prunedTurnLimit}", firstBlockedObject != null ? firstBlockedObject : this.gameObject);
+        return false;
     }
 
     class Node
     {
-        public int x, z;
-        public int g, h, f;
+        public int x;
+        public int z;
+        public int g;
+        public int h;
+        public int dir; // -1 none, 0:+X,1:-X,2:+Z,3:-Z
+        public int turns;
         public Node parent;
+    }
 
-        public Node(int x, int z, int g, int h, Node parent)
+    static string Key(int x, int z, int dir, int turns) => x + "," + z + "," + dir + "," + turns;
+
+    static Vector2[] Reconstruct(Node end)
+    {
+        System.Collections.Generic.List<Vector2> rev = new System.Collections.Generic.List<Vector2>();
+        Node cur = end;
+        while (cur != null)
         {
-            this.x = x; this.z = z; this.g = g; this.h = h; this.f = g + h; this.parent = parent;
+            rev.Add(new Vector2(cur.x, cur.z));
+            cur = cur.parent;
         }
-    }
-
-    // TurnNode moved to class scope to be a valid C# type
-    class TurnNode
-    {
-        public int x, z;
-        public int dir; // -1 = start (no direction yet), otherwise 0..3 matching neighborOffsets
-        public int turns; // number of direction changes so far
-        public int steps; // number of steps taken (used only to break ties)
-        public TurnNode parent;
-
-        public TurnNode(int x, int z, int dir, int turns, int steps, TurnNode parent)
-        {
-            this.x = x; this.z = z; this.dir = dir; this.turns = turns; this.steps = steps; this.parent = parent;
-        }
-    }
-
-    static readonly (int x, int z)[] neighborOffsets = new (int x, int z)[] { (1,0), (-1,0), (0,1), (0,-1) };
-
-    static int Heuristic(int x1, int z1, int x2, int z2)
-    {
-        // Manhattan distance
-        return Mathf.Abs(x1 - x2) + Mathf.Abs(z1 - z2);
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        rev.Reverse();
+        return rev.ToArray();
     }
 
     public enum PathResult
     {
-        NoPath,
+        NoOpenPath,
         TooMuchTurn,
         Success
     }

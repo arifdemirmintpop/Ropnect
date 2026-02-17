@@ -112,21 +112,22 @@ public class InputController : MonoBehaviour
         var second = secondCell.reel;
         if (first == null || second == null) return;
 
-        // Reach check: use grid connectivity via GirdAreaController.TryToReach
-        var grid = FindObjectOfType<GirdAreaController>();
+        // Reach check: use grid connectivity via GirdAreaController.TryToReach (extended API)
+        var grid = FindFirstObjectByType<GirdAreaController>();
         Vector2 fromCoord = firstSelectedCell.coordinate;
         Vector2 toCoord = secondCell.coordinate;
 
-        // call TryToReach and capture returned path (may be null)
-        bool canReach = grid.TryToReach(fromCoord, toCoord, out var path);
+        // call extended TryToReach and capture returned path, result and blocking object (if any)
+        bool canReach = grid.TryToReach(fromCoord, toCoord, out var path, out var result, out var blockingObject);
 
-        Debug.Log($"InputController: TryToReach returned canReach={canReach}, pathLength={(path==null?0:path.Length)}");
+        Debug.Log($"InputController: TryToReach -> canReach={canReach}, result={result}, pathLength={(path==null?0:path.Length)}", blockingObject ? blockingObject : grid.gameObject);
 
 
         if (!canReach)
         {
-            // draw whatever path was returned (if any) regardless of canReach
-            DrawPath(path, grid, Color.red);
+            // draw path in different color based on failure reason
+            var color = (result == GirdAreaController.PathResult.TooMuchTurn) ? new Color(1f, 0.75f, 0f) : Color.red; // orange for too many turns
+            DrawPath(path, grid, color);
             OnCantReach(secondCell);
             return;
         }
